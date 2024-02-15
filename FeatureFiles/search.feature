@@ -39,4 +39,26 @@ Feature: Search
     And user selects: "Above 2000" under fees
     Then verify the results
     
-# TODO: add test cases for availability filter
+  @regression
+  Scenario: Filter doctors by availability
+    Given user opens practo
+    And user navigates to search for doctors
+    When user clicks on All filters
+    And user selects: "Available in next 4 hours" under availability
+    Then verify the results
+
+  @regression
+  Scenario: Filter doctors by availability
+    Given user opens practo
+    And user navigates to search for doctors
+    When user clicks on All filters
+    And user selects: "Available Today" under availability
+    Then verify the results
+
+  @regression
+  Scenario: Filter doctors by availability
+    Given user opens practo
+    And user navigates to search for doctors
+    When user clicks on All filters
+    And user selects: "Available Tomorrow" under availability
+    Then verify the results
