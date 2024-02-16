@@ -17,22 +17,22 @@ public class BaseClass {
 
 	public static WebDriver initializeBrowse() throws IOException {
 
-		switch (getProperties().getProperty("browser").toLowerCase()) {
-
-		case "chrome":
-			driver = new ChromeDriver();
-			break;
-		case "edge":
-			driver = new EdgeDriver();
-			break;
-		case "firefox":
-			driver = new FirefoxDriver();
-			break;
-		default:
-			System.out.println("no matching browser");
-			driver = null;
-
-		}
+// TODO: Fetch browser parameter from textng.xml
+		
+//		switch (getProperties().getProperty("browser")) {
+//		case "chrome":
+//			driver = new ChromeDriver();
+//			break;
+//		case "edge":
+//			driver = new EdgeDriver();
+//			break;
+//		case "firefox":
+//			driver = new FirefoxDriver();
+//			break;
+//		default:
+//			System.out.println("no matching browser");
+//			driver = null;
+//		}
 
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -47,8 +47,7 @@ public class BaseClass {
 	public static Properties getProperties() {
 
 		try {
-			FileReader file = new FileReader(
-					System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties");
+			FileReader file = new FileReader(System.getProperty("user.dir") + "/src/test/resources/config.properties");
 			p = new Properties(); // Creating new Properties instance
 			p.load(file);
 		} catch (Exception e) {
