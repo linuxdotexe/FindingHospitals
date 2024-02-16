@@ -12,8 +12,10 @@ Feature: Home Page
       | Surgeries       | Practo Care Surgeries \| End to end care from top surgeons in your city                      |
 
   @smoke
-  Scenario: Verify navigation item: "Lab Tests"
+  Scenario: Verify Lab Tests navigation
     Given user opens practo
-    When user clicks on: "Lab Tests"
-    Then click on selected city: "Bangalore"
-    Then verify page title: "Blood Tests | Book Diagnostic Tests from Home at Best Prices | Practo"
+    When user clicks on: <Navigation Item>
+    Then click on selected city: <City>
+    Then verify page title: <Page Title>
+      | Navigation Item | City      | Page Title                                                              |
+      | Lab Tests       | Bangalore | Blood Tests \| Book Diagnostic Tests from Home at Best Prices \| Practo |
