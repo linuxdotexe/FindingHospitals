@@ -1,5 +1,6 @@
 Feature: Hospitals with "24x7" service, rating above "3.5" and parking.
 
+	@test
   Scenario: 
     Given user opens practo
     When user searches for hospital
