@@ -17,22 +17,22 @@ public class BaseClass {
 
 	public static WebDriver initializeBrowse() throws IOException {
 
-// TODO: Fetch browser parameter from textng.xml
+// TODO: Figure out automated multiple browser testing
 		
-//		switch (getProperties().getProperty("browser")) {
-//		case "chrome":
-//			driver = new ChromeDriver();
-//			break;
-//		case "edge":
-//			driver = new EdgeDriver();
-//			break;
-//		case "firefox":
-//			driver = new FirefoxDriver();
-//			break;
-//		default:
-//			System.out.println("no matching browser");
-//			driver = null;
-//		}
+		switch (getProperties().getProperty("browser")) {
+		case "chrome":
+			driver = new ChromeDriver();
+			break;
+		case "edge":
+			driver = new EdgeDriver();
+			break;
+		case "firefox":
+			driver = new FirefoxDriver();
+			break;
+		default:
+			System.out.println("no matching browser");
+			driver = null;
+		}
 
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
