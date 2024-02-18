@@ -6,8 +6,8 @@ Feature: Search
     And user navigates to search for doctors
     When user filters by patient stories: <Stories Count>
     Then verify the number of patient stories is above <Count Check>
-      | Stories Count    | Count Check |
-      | 60+ stories      |         60  |
+      | Stories Count | Count Check |
+      | 60+ stories   |          60 |
 
   @regression
   Scenario: Filter doctors by fees
@@ -16,8 +16,8 @@ Feature: Search
     When user clicks on All filters
     And user selects: <Fee range> under fees
     Then verify if the listed doctors have a fee requirement under <Price Check>
-      | Fee range  | Price Check |
-      | 0-500      |         500 |
+      | Fee range | Price Check |
+      | 0-500     |         500 |
 
   @regression
   Scenario: Filter doctors by fees
@@ -49,3 +49,13 @@ Feature: Search
     When user clicks on All filters
     And user selects: Video Consult under Consult type
     Then capture doctor names who are available only on video consultation
+
+  @regression
+  Scenario: Filter doctors location in Chennai
+    Given user opens practo
+    And user navigates to search for doctors
+    When user selects location as chennai
+    And user clicks Anna Nagar under location
+    Then verify if Anna Nagar is selected: <Message>
+      | Message                                                      |
+      | You are seeing results from anna nagar. See results near you |
