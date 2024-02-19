@@ -92,3 +92,9 @@ Feature: Surgeries
     Examples:
       | Surgery Name | Name | Contact Number | City      |
       | Cataract     | Sa   |       98798798 | Bangalore |
+
+	@test
+	Scenario: Extract surgeries
+		Given user navigates to Surgeries from the homepage
+		When extract surgeries listed under Popular Surgeries
+		Then display them in console output

@@ -2,8 +2,7 @@ Feature: Search
 
   @regression
   Scenario: Filter doctors by patient stories
-    Given user opens practo
-    And user navigates to search for doctors
+    Given user navigates to search for doctors
     When user filters by patient stories: "<Stories Count>"
     Then verify the number of patient stories is above "<Count Check>"
     
@@ -13,8 +12,7 @@ Feature: Search
 
   @regression
   Scenario: Filter doctors by fees
-    Given user opens practo
-    And user navigates to search for doctors
+    Given user navigates to search for doctors
     When user clicks on All filters
     And user selects: "<Fee range>" under fees
     Then verify if the listed doctors have a fee requirement under "<Price Check>"
@@ -25,8 +23,7 @@ Feature: Search
 
   @regression
   Scenario: Filter doctors by fees
-    Given user opens practo
-    And user navigates to search for doctors
+    Given user navigates to search for doctors
     When user clicks on All filters
     And user selects: "<Fee range>" under fees
     Then verify if the listed doctors have a fee requirement over "<Price Check>"
@@ -39,8 +36,7 @@ Feature: Search
 
   @regression
   Scenario: Filter doctors by availability
-    Given user opens practo
-    And user navigates to search for doctors
+    Given user navigates to search for doctors
     When user clicks on All filters
     And user selects: "<Availability>" under availability
     Then verify if the availability displayed above book clinic visit matches "<Availability>"
@@ -52,16 +48,14 @@ Feature: Search
 
   @regression
   Scenario: Filter doctors by video consult availability
-    Given user opens practo
-    And user navigates to search for doctors
+    Given user navigates to search for doctors
     When user clicks on All filters
     And user selects "Video Consult" under Consult type
     Then capture doctor names who are available only on video consultation
 
   @regression
   Scenario: Filter doctors location in "Chennai"
-    Given user opens practo
-    And user navigates to search for doctors
+    Given user navigates to search for doctors
     When user selects location as chennai
     And user clicks Anna Nagar under location
     Then verify if Anna Nagar is selected: "<Message>"
@@ -69,3 +63,18 @@ Feature: Search
     Examples:
       | Message                                                      |
       | You are seeing results from anna nagar. See results near you |
+
+  @test
+  Scenario: Search Doctors
+    Given user searches for "<Search>" from the homepage
+    When user selects location as "<Location>"
+    And user selects "<Patient Stories>" under Patient Stories filter
+    And user selects "<Experience>" under Experience filter
+    And user selects "<Fees>" under Fees
+    And user selects "<Availability>" under Availability filter
+    And user selects "<Sort>" under sort
+    Then record top five doctor names
+    
+    Examples:
+      | Search  | Location | Patient Stories     | Experience             | Fees      | Availability    | Sort                                    |
+      | Dentist | Chennai  | 80+ Patient Stories | 5+ Years of experience | Above 500 | Available Today | Number of patient stories - High to low |

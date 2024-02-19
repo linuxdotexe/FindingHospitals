@@ -2,8 +2,7 @@ Feature: Health and Wellness
 
   @smoke
   Scenario: verify page title
-    Given user opens practo
-    When user clicks on For Corporates
+    Given user clicks on For Corporates
     And user clicks on Health and Wellness Plan
     Then verify the page title: "<Title>"
     
@@ -13,18 +12,14 @@ Feature: Health and Wellness
 
   @sanity
   Scenario: verify Schedule a demo button navigation
-    Given user opens practo
-    When user clicks on For Corporates
-    And user clicks on Health and Wellness Plan
+    Given user navigates to Health and Wellness Plan page
     When scroll down until Schedule a demo navigation helper is visible
     And click the Schedule a demo button
     Then verify the page is scrolled up to the top
 
   @smoke
   Scenario: verify if submit button disabled with incorrect details
-    Given user opens practo
-    And user clicks on For Corporates
-    And user clicks on Health and Wellness Plan
+    Given user navigates to Health and Wellness Plan page
     When user inputs "<Name>" in name
     And user inputs "<Organization>" in organization name
     And user inputs "<Contact Number>" in Contact Number
@@ -42,9 +37,7 @@ Feature: Health and Wellness
 
   @smoke
   Scenario: verify if submit button enabled with correct details
-    Given user opens practo
-    And user clicks on For Corporates
-    And user clicks on Health and Wellness Plan
+    Given user navigates to Health and Wellness Plan page
     When user inputs "<Name>" in name
     And user inputs "<Organization>" in organization name
     And user inputs "<Contact Number>" in Contact Number
@@ -59,9 +52,7 @@ Feature: Health and Wellness
 
   @smoke
   Scenario: verify form submission with correct details
-    Given user opens practo
-    And user clicks on For Corporates
-    And user clicks on Health and Wellness Plan
+    Given user navigates to Health and Wellness Plan page
     When user inputs "<Name>" in name
     And user inputs "<Organization>" in organization name
     And user inputs "<Contact Number>" in Contact Number
@@ -75,3 +66,20 @@ Feature: Health and Wellness
       | Name      | Organization | Contact Number | Email            | Organization Size | Interested in |
       | Sai Nivas | DemoOrg      |     9876543210 | name@website.com | >500              | Taking a demo |
 
+  @regression @test
+  Scenario: verify form submission with correct details
+    Given user navigates to Health and Wellness Plan page
+    When user inputs "<Name>" in name
+    And user inputs "<Organization>" in organization name
+    And user inputs "<Contact Number>" in Contact Number
+    And user inputs "<Invalid Email>" in Official Email ID
+    And user selects Organization size: "<Organization Size>"
+    And user selects "<Interested in>" in Interested in
+    And verify and output if Schedule a demo button is disabled
+    Then user inputs "<Valid Email>" in Official Email ID
+    And user clicks Schedule a demo button
+    Then capture thank you message
+    
+    Examples:
+      | Name      | Organization | Contact Number | Invalid Email | Valid Email      | Organization Size | Interested in |
+      | Sai Nivas | DemoOrg      |     9876543210 | name@website  | name@website.com | >500              | Taking a demo |

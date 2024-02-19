@@ -15,9 +15,9 @@ public class HomePageSteps {
 	WebDriver driver = BaseClass.getDriver();
 	HomePage hp = new HomePage(driver);
 	
-	@Given("user opens practo")
+	@Given("user opens practo home page")
 	public void user_opens_practo() {
-		System.out.println("practo is open");
+		System.out.println("Practo is open");
 	}
 
 	@When("user clicks on {string}")

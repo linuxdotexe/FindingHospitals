@@ -2,7 +2,7 @@ Feature: Home Page
 
   @smoke
   Scenario: Verify navigation items
-    Given user opens practo
+    Given user opens practo home page
     When user clicks on "<Navigation Item>"
     Then verify page title "<Page Title>"
     
