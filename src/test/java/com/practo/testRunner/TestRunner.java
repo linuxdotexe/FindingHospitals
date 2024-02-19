@@ -8,8 +8,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		features= {".//FeatureFiles/"}, 
-		glue = "stepDefinitions", 
+		features= {".//FeatureFiles/surgeries.feature"}, 
+		glue = "com.practo.stepDefinitions", 
 		plugin = {"pretty","html:reports/report.html"},
 		dryRun=false,
 		monochrome=true
