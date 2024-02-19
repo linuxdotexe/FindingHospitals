@@ -21,16 +21,18 @@ Feature: Health and Wellness
     Given user opens practo
     And user clicks on For Corporates
     And user clicks on Health and Wellness Plan
-    When user inputs <Name> in name
-    And user inputs <Organization> in organization name
-    And user inputs <Contact Number> in Contact Number
-    And user inputs <Email> in Official Email ID
-    And user selects Organization size: <Organization Size>
-    And user selects <Interested in> in Interested in
+    When user inputs "<Name>" in name
+    And user inputs "<Organization>" in organization name
+    And user inputs "<Contact Number>" in Contact Number
+    And user inputs "<Email>" in Official Email ID
+    And user selects Organization size: "<Organization Size>"
+    And user selects "<Interested in>" in Interested in
     Then verify Schedule a demo button is disabled
+    
+    Examples:
       | Name      | Organization | Contact Number | Email            | Organization Size | Interested in |
       | Sai       | DemoOrg      |          86420 | name@website.com | 1001-5000         | Taking a demo |
-      | Nivas     | DemoOrg      |     9876543310 | name@website     | <500              | Taking a demo |
+      | Nivas     | DemoOrg      |     9876543310 | name@website     | >500              | Taking a demo |
       | Venkata   | DemoOrg      |     9876544210 | name@website.co  |                   | Taking a demo |
       | Sai Nivas | DemoOrg      |     9876553210 | name@site.com    | 5001-10000        |               |
 
@@ -39,13 +41,15 @@ Feature: Health and Wellness
     Given user opens practo
     And user clicks on For Corporates
     And user clicks on Health and Wellness Plan
-    When user inputs <Name> in name
-    And user inputs <Organization> in organization name
-    And user inputs <Contact Number> in Contact Number
-    And user inputs <Email> in Official Email ID
-    And user selects Organization size: <Organization Size>
-    And user selects <Interested in> in Interested in
+    When user inputs "<Name>" in name
+    And user inputs "<Organization>" in organization name
+    And user inputs "<Contact Number>" in Contact Number
+    And user inputs "<Email>" in Official Email ID
+    And user selects Organization size: "<Organization Size>"
+    And user selects "<Interested in>" in Interested in
     Then verify Schedule a demo button is enabled
+    
+    Examples:
       | Name      | Organization | Contact Number | Email            | Organization Size | Interested in |
       | Sai Nivas | DemoOrg      |     9876543210 | name@website.com | 501-1000          | Taking a demo |
 
@@ -54,14 +58,16 @@ Feature: Health and Wellness
     Given user opens practo
     And user clicks on For Corporates
     And user clicks on Health and Wellness Plan
-    When user inputs <Name> in name
-    And user inputs <Organization> in organization name
-    And user inputs <Contact Number> in Contact Number
-    And user inputs <Email> in Official Email ID
-    And user selects Organization size: <Organization Size>
-    And user selects <Interested in> in Interested in
+    When user inputs "<Name>" in name
+    And user inputs "<Organization>" in organization name
+    And user inputs "<Contact Number>" in Contact Number
+    And user inputs "<Email>" in Official Email ID
+    And user selects Organization size: "<Organization Size>"
+    And user selects "<Interested in>" in Interested in
     And click Schedule a demo button
     Then capture thank you message
+    
+    Examples:
       | Name      | Organization | Contact Number | Email            | Organization Size | Interested in |
-      | Sai Nivas | DemoOrg      |     9876543210 | name@website.com | <500              | Taking a demo |
+      | Sai Nivas | DemoOrg      |     9876543210 | name@website.com | >500              | Taking a demo |
 
