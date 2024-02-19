@@ -13,20 +13,11 @@ Employee ID: **2304060**
 > - Explore Selenium Grid to run test scripts on different platforms and against different browsers.
 > - Integrate Jenkins with version controller (GIT) and scheduled builds to run automatically.
 
-## Problem Statement
+## Problem Description
 
-> Get the hospital names 
-> 1. Hospital near which is open 24*7
-> 2. Which has parking facility
-> 3. rating should be more than 3.5
-> (Suggested Site: practo.com however  you are free to choose any other legitimate  site)
-
-## Detailed Description
-
-> 1. For Bangalore city, identify Hospitals that is Open 24/7, has Parking facility with rating more than 3.5; Display the hospital names
-> 2. In Diagnostics page, pick all the top cities name & store in a List; Display the same
-> 3. Go to Corporate Wellness, fill invalid details, schedule & capture the warning message from the alert
-> (Suggested Site:practo.com however  you are free to choose any other legitimate  site)
+> 1. Search Doctors (any one speciality like Dentist, Cardiologist, etc) for any City (like Chennai, Bangalore, Pune, etc). Apply filters for Patient Stories, Experience, Fees, Availability and any one Sorting; Fetch & display the first 5 Doctor details
+> 2. Go to "Surgeries". Extract & store all the surgeries in a List & display them in console output.
+> 3. Under "For Corporate -> Health and Wellness Plan", fill the form with invalid email id & valid details for other fields, validate if "Taking a demo" button is disabled. Print the observation in console output. Then provide email in valid format & click the button and validate "Thank You" message is displayed
 
 ## Key Automation Scope
 
