@@ -5,7 +5,11 @@ Feature: Health and Wellness
     Given user opens practo
     When user clicks on For Corporates
     And user clicks on Health and Wellness Plan
-    Then verify the browser navigates to the right page
+    Then verify the page title: "<Title>"
+    
+    Examples:
+    	| Title 																												 |
+    	| Employee Health \| Corporate Health & Wellness Plans \| Practo |
 
   @sanity
   Scenario: verify Schedule a demo button navigation

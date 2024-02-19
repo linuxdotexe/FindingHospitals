@@ -44,4 +44,17 @@ public class HomePage extends BasePage {
 			surgeriesNavElement.click();
 		}
 	}
+
+	// TODO: write methods
+	@FindBy(xpath="//span[text()='For Corporates']/ancestor::div[@tabindex='0']")
+	WebElement forCorporatesDropdown;
+	
+	@FindBy(linkText="Health & Wellness Plans")
+	WebElement healthWellnessButton;
+	
+	public void navigateToHealthWellness() {
+		forCorporatesDropdown.click();
+		healthWellnessButton.click();
+	}
+	
 }
