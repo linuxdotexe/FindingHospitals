@@ -55,11 +55,11 @@ Feature: Search
     Given user opens practo
     And user navigates to search for doctors
     When user clicks on All filters
-    And user selects: Video Consult under Consult type
+    And user selects "Video Consult" under Consult type
     Then capture doctor names who are available only on video consultation
 
   @regression
-  Scenario: Filter doctors location in Chennai
+  Scenario: Filter doctors location in "Chennai"
     Given user opens practo
     And user navigates to search for doctors
     When user selects location as chennai
