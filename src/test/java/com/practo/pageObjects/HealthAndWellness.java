@@ -1,9 +1,13 @@
 package com.practo.pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HealthAndWellness extends BasePage{
 
@@ -11,7 +15,7 @@ public class HealthAndWellness extends BasePage{
 		super(driver);
 	}
 	
-	@FindBy(className="mweb-hide sticky_side_bar text-alpha u-text--bold")
+	@FindBy(xpath="//button[@class='mweb-hide sticky_side_bar text-alpha u-text--bold']")
 	WebElement scheduleDemoNavButton;
 	
 	public void clickScheduleDemoNavButton() {
@@ -37,17 +41,31 @@ public class HealthAndWellness extends BasePage{
 	WebElement interestedInSelectSchedule;
 	
 	@FindBy(xpath="//button[text()='Schedule a demo']")
-	WebElement scheduleDemoButton;
+	public WebElement scheduleDemoButton;
 	
-	public void fillScheduleForm(String name, String orgName, String contact, String email, String orgSize, String interestedIn) {
+	public void fillName(String name) {
 		nameInputSchedule.sendKeys(name);
+	}
+
+	public void fillOrganization(String orgName) {
 		orgInputSchedule.sendKeys(orgName);
+	}
+
+	public void fillContact(String contact) {
 		contactInputSchedule.sendKeys(contact);
+	}
+	
+	public void fillEmail(String email) {
+		emailInputSchedule.clear();
 		emailInputSchedule.sendKeys(email);
-		
+	}
+	
+	public void selectOrgSize(String orgSize) {
 		Select orgSizeSelect = new Select(orgSizeSelectSchedule);
 		orgSizeSelect.selectByVisibleText(orgSize);
+	}
 
+	public void selectInterest(String interestedIn) {
 		Select interestedInSelect = new Select(interestedInSelectSchedule);
 		interestedInSelect.selectByVisibleText(interestedIn);
 	}
@@ -64,6 +82,10 @@ public class HealthAndWellness extends BasePage{
 	WebElement thankYouMessage;
 	
 	public String fetchThankYouMessage() {
+		if (thankYouMessage.isDisplayed() == false) {
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+			wait.until(ExpectedConditions.visibilityOf(thankYouMessage));
+		}
 		return thankYouMessage.getText();
 	}
 

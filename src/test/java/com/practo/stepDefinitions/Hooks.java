@@ -10,9 +10,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import com.practo.utils.BaseClass;
-import io.cucumber.java.AfterAll;
+import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
-import io.cucumber.java.BeforeAll;
+import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 public class Hooks {
@@ -20,7 +20,7 @@ public class Hooks {
 	static WebDriver driver;
 	static Properties p;
 	
-	@BeforeAll
+	@Before
 	public static void setup() throws IOException{
 		driver = BaseClass.initializeBrowse();		
 		p = BaseClass.getProperties();
@@ -28,7 +28,7 @@ public class Hooks {
 		driver.get(p.getProperty("appUrl"));
 	}
 	
-	@AfterAll
+	@After
 	public static void tearDown() {
 		driver.quit();
 	}

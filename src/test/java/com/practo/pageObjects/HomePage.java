@@ -45,7 +45,6 @@ public class HomePage extends BasePage {
 		}
 	}
 
-	// TODO: write methods
 	@FindBy(xpath="//span[text()='For Corporates']/ancestor::div[@tabindex='0']")
 	WebElement forCorporatesDropdown;
 	
