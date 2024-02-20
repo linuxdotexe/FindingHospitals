@@ -3,25 +3,25 @@ Feature: Surgeries
   @smoke
   Scenario: Verify consultation form submission with correct details
     Given user navigates to Surgeries from home page
-    When user selects "<City>" from the city dropdown
+    When user selects "<City>" from the city dropdown on surgeries
     And user selects "<Ailment>" from the ailment dropdown
-    And user inputs "<Name>" in name
-    And user inputs "<Contact Number>" in Contact Number
+    And user inputs "<Name>" in name on surgeries
+    And user inputs "<Contact Number>" in Contact Number on surgeries
     And click Book Appointment button
-    Then capture otp input box placeholder text
+    Then capture mobile number in otp popup
     
     Examples:
       | City      | Ailment                | Contact Number | Name  |
-      | Bangalore | Carpal Tunnel Syndrome |     8897732030 | Sai   |
-      | Chennai   | ACL Repair             |     8897732030 | Nivas |
+      | Bangalore | Carpal Tunnel Syndrome |     9879879877 | Sai   |
+      | Chennai   | ACL Repair             |     9879879877 | Nivas |
 
   @smoke
   Scenario: Verify consultation form submission with wrong name
     Given user navigates to Surgeries from home page
-    When user selects "<City>" from the city dropdown
+    When user selects "<City>" from the city dropdown on surgeries
     And user selects "<Ailment>" from the ailment dropdown
-    And user inputs "<Contact Number>" in contact number
-    And user inputs "<Name>" in name
+    And user inputs "<Name>" in name on surgeries
+    And user inputs "<Contact Number>" in Contact Number on surgeries
     Then capture error message displayed below name
     
     Examples:
@@ -31,10 +31,10 @@ Feature: Surgeries
   @smoke
   Scenario: Verify consultation form submission with wrong contact number
     Given user navigates to Surgeries from home page
-    When user selects "<City>" from the city dropdown
+    When user selects "<City>" from the city dropdown on surgeries
     And user selects "<Ailment>" from the ailment dropdown
-    And user inputs "<Contact Number>" in contact number
-    And user inputs "<Name>" in name
+    And user inputs "<Name>" in name on surgeries
+    And user inputs "<Contact Number>" in Contact Number on surgeries
     Then capture error message displayed below contact number
     
     Examples:
@@ -45,11 +45,12 @@ Feature: Surgeries
   @smoke
   Scenario: Verify consultation form submission with wrong name and contact number
     Given user navigates to Surgeries from home page
-    When user selects "<City>" from the city dropdown
+    When user selects "<City>" from the city dropdown on surgeries
     And user selects "<Ailment>" from the ailment dropdown
-    And user inputs "<Contact Number>" in contact number
-    And user inputs "<Name>" in name
-    Then capture error message displayed below name and contact number
+    And user inputs "<Name>" in name on surgeries
+    And user inputs "<Contact Number>" in Contact Number on surgeries
+    Then capture error message displayed below name
+    Then capture error message displayed below contact number
     
     Examples:
       | City      | Ailment                | Contact Number | Name |
@@ -60,7 +61,7 @@ Feature: Surgeries
   Scenario: Verify surgeries form popup message
     Given user navigates to Surgeries from home page
     When user clicks on "<Surgery Name>" under Popular Surgeries
-    Then verify the message displayed above the form
+    Then verify the message displayed above the surgery form contains "<Surgery Name>"
     
     Examples:
       | Surgery Name |
@@ -71,10 +72,11 @@ Feature: Surgeries
   Scenario: Verify surgeries form submission with correct details
     Given user navigates to Surgeries from home page
     When user clicks on "<Surgery Name>" under Popular Surgeries
-    And enter "<Name>" in name
-    And enter "<Contact Number>" in contact number
-    And select "<City>" in the city dropdown
-    Then capture otp input box placeholder text
+    And enter "<Name>" in name in popular surgery form
+    And enter "<Contact Number>" in contact number in popular surgery form
+    And select "<City>" in the city dropdown in popular surgery form
+    And user clicks on Book Appointment button in popular surgery form
+    Then capture mobile number in otp popup
     
     Examples:
       | Surgery Name | Name | Contact Number | City      |
@@ -84,10 +86,11 @@ Feature: Surgeries
   Scenario: Verify surgeries form submission with incorrect details
     Given user navigates to Surgeries from home page
     When user clicks on "<Surgery Name>" under Popular Surgeries
-    And enter "<Name>" in name
-    And enter "<Contact Number>" in contact number
-    And select "<City>" in the city dropdown
-    Then capture error message below name and contact input box
+    And enter "<Name>" in name in popular surgery form
+    And enter "<Contact Number>" in contact number in popular surgery form
+    And select "<City>" in the city dropdown in popular surgery form
+    Then capture error message displayed below name
+    Then capture error message displayed below contact number
     
     Examples:
       | Surgery Name | Name | Contact Number | City      |
@@ -95,6 +98,6 @@ Feature: Surgeries
 
 	@test
 	Scenario: Extract surgeries
-		Given user navigates to Surgeries from the homepage
+		Given user navigates to Surgeries from home page
 		When extract surgeries listed under Popular Surgeries
-		Then display them in console output
+		And display them in console output
