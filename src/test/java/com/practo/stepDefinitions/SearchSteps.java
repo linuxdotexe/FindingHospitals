@@ -58,7 +58,16 @@ public class SearchSteps {
 	@Then("verify if the listed doctors have the right fee requirement {string}")
 	public void verify_if_the_listed_doctors_have_the_right_fee_requirement(String priceCheck) {
 		Assert.assertTrue(sh.seperateAndVerifyDoctorFees(sh.doctorInfoCard, priceCheck));
-		System.out.println(sh.doctorFee);
+	}
+	
+	@And("user selects: {string} under availability")
+	public void user_selects_under_availability(String availability) {
+		sh.selectAvailability(availability);
+	}
+	
+	@Then("verify if the availability displayed above book clinic visit matches {string}")
+	public void verify_if_the_availability_displayed_above_book_clinic_visit_matches(String availability) {
+		System.out.println(sh.verifyAvailability(availability));
 	}
 
 }

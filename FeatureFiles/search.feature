@@ -12,31 +12,32 @@ Feature: Search
       #| Stories Count 				| Location | Specialization |
       #| 80+ Patient Stories   | Chennai  | Dentist        |
 
+  #@regression
+  #Scenario: Filter doctors by fees
+    #Given user selects location as "<Location>"
+    #When user inputs "<Specialization>" in search
+    #And user clicks on All filters
+    #And user selects: "<Fee range>" under fees
+    #Then verify if the listed doctors have the right fee requirement "<Fee range>"
+    #
+    #Examples:
+      #| Fee range  | Location | Specialization |
+      #| 0-500      | Chennai	| Dentist				 |
+      #| Above 500  | Chennai	| Dentist				 |
+
   @regression
-  Scenario: Filter doctors by fees
+  Scenario: Filter doctors by availability
     Given user selects location as "<Location>"
     When user inputs "<Specialization>" in search
     And user clicks on All filters
-    And user selects: "<Fee range>" under fees
-    Then verify if the listed doctors have the right fee requirement "<Fee range>"
+    And user selects: "<Availability>" under availability
+    Then verify if the availability displayed above book clinic visit matches "<Availability>"
     
     Examples:
-      | Fee range  | Location | Specialization |
-      | 0-500      | Chennai	| Dentist				 |
-      | Above 500  | Chennai	| Dentist				 |
+      | Availability       | Location | Specialization |
+      | Available Today    | Chennai 	| Dentist				 |
+      #| Available Tomorrow | Chennai 	| Dentist				 |
 
-  #@regression
-  #Scenario: Filter doctors by availability
-    #Given user navigates to search for doctors
-    #When user clicks on All filters
-    #And user selects: "<Availability>" under availability
-    #Then verify if the availability displayed above book clinic visit matches "<Availability>"
-    #
-    #Examples:
-      #| Availability       |
-      #| Available Today    |
-      #| Available Tomorrow |
-#
   #@regression
   #Scenario: Filter doctors by video consult availability
     #Given user navigates to search for doctors

@@ -146,7 +146,7 @@ public class Search extends BasePage{
 	List<String> doctorSpecialization = new ArrayList<String>();
 	List<String> doctorExperience = new ArrayList<String>();
 	List<String> doctorLocation = new ArrayList<String>();
-	public List<String> doctorFee = new ArrayList<String>();
+	List<String> doctorFee = new ArrayList<String>();
 	
 	public Boolean seperateAndVerifyDoctorFees(List<WebElement> infoCard, String condition) {
 		for (int i = 0; i < 5; i++) {
@@ -192,13 +192,13 @@ public class Search extends BasePage{
 	
 	public Boolean verifyAvailability(String availability) {
 		int count = 0;
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 5; i++) {
 			String buttonText = verifyAvailability.get(i).getText();
 			if (buttonText.equals(availability)) {
 				count += 1;
 			}
 		}
-		if (count == 10) {
+		if (count == 5) {
 			return true;
 		}
 		else {
