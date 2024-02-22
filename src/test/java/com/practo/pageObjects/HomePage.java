@@ -55,5 +55,11 @@ public class HomePage extends BasePage {
 		forCorporatesDropdown.click();
 		healthWellnessButton.click();
 	}
+
+	@FindBy(xpath="//span[text()='Search for doctors']/parent::a")
+	WebElement searchForDoctors;
 	
+	public void navigateToSearchForDoctors() {
+		searchForDoctors.click();
+	}
 }

@@ -11,46 +11,69 @@ public class Search extends BasePage{
 	public Search(WebDriver driver) {
 		super(driver);
 	}
-
-	@FindBy(xpath="//span[text()='Search for doctors']/parent::a")
-	WebElement searchForDoctors;
 	
+	@FindBy(xpath="//input[@data-qa-id='omni-searchbox-keyword']")
+	WebElement inputSpecialist;
+	
+	@FindBy(xpath="//div[@data-qa-id='omni-suggestion-main']")
+	WebElement specializationSearchFirstSuggestion;
+	
+	public void searchForSpecialist(String specialization) {
+		if (inputSpecialist.getAttribute("value").equals(specialization)) {
+			// do nothing
+		} else {
+			System.out.println(inputSpecialist.getAttribute("value"));
+			inputSpecialist.clear();
+			inputSpecialist.sendKeys(specialization);
+			specializationSearchFirstSuggestion.click();
+			
+		}
+	}
+	
+	@FindBy(xpath="//input[@data-qa-id='omni-searchbox-locality']") 
+	WebElement inputLocation;
+	
+	@FindBy(xpath="//div[@data-qa-id='omni-suggestion-main' and text()='Chennai']")
+	WebElement inputConfirmation;
+	
+	public void searchForLocation (String location) {
+		if (inputLocation.getAttribute("value").equals(location)) {
+			// do nothing. we have the location already.
+		} else {
+			inputLocation.clear();
+			inputLocation.sendKeys(location);
+			if (inputConfirmation.isDisplayed()) {
+				inputConfirmation.click();
+			}
+		}
+	}
+
 	@FindBy(xpath="//div[@data-qa-id='doctor_review_count_section']")
 	WebElement patientStoriesDropdown;
 	
-	@FindBy(xpath="//li[@data-qa-id='60,9999999']")
-	WebElement above60PatientStories;
+	@FindBy(xpath="//ul[@data-qa-id='doctor_review_count_list']/li[@class='c-dropdown__list__item']")
+	List<WebElement> patientStoriesCountSelector;
 	
-	@FindBy(xpath="//span[@data-qa-id='total_feedback']")
-	List<WebElement> reviewCounts;
+	@FindBy(xpath="//h1")
+	WebElement numberOfDoctors;
 	
-	public void navigateToSearchDoctors() {
-		searchForDoctors.click();
-	}
-	
-	public void filterByPatientStories() {
+	public void filterByPatientStories(String numberOfStories) {
 		patientStoriesDropdown.click();
-		above60PatientStories.click();
+		patientStoriesCountSelector.get(1).click();
 	}
 	
-	public Boolean verifyStoryCount(int requiredCount) {
-		int count = 0;
-		for (int i = 0; i < 10; i++) {
-			int reviewNumber =Integer.parseInt(reviewCounts.get(i).getText().replace("Patient Stories", ""));
-			if (reviewNumber > requiredCount) {
-				count += 1;
-			}
+	public int numberOfDoctors() {
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
 		}
-		if (count == 10) {
-			return true;
-		}
-		else {
-			return false;
-		}
+		return Integer.parseInt(numberOfDoctors.getText().split("\\s+")[0]);
 	}
 	
-	@FindBy(className="u-d-inlineblock u-color--white u-c-pointer")
-	WebElement allFiltersDropdown;
+	// FIXME: classname to xpath
+//	@FindBy(className="u-d-inlineblock u-color--white u-c-pointer")
+//	WebElement allFiltersDropdown;
 	
 	@FindBy(xpath="//label[@for='Fees0']")
 	WebElement feesBelow500RadioButton;
@@ -67,22 +90,22 @@ public class Search extends BasePage{
 	@FindBy(xpath="//span[@data-qa-id='consultation_fee']")
 	List<WebElement> feesVerification;
 	
-	public void selectFeeRange(String feeRange) {
-		allFiltersDropdown.click();
-		
-		if (feeRange.equals("0-500")) {
-			feesBelow500RadioButton.click();
-		}
-		else if (feeRange.equals("Above 500")) {
-			feesAbove500RadioButton.click();
-		}
-		else if (feeRange.equals("Above 1000")) {
-			feesAbove1000RadioButton.click();
-		}
-		else if (feeRange.equals("Above 2000")) {
-			feesAbove2000RadioButton.click();
-		}
-	}
+//	public void selectFeeRange(String feeRange) {
+//		allFiltersDropdown.click();
+//		
+//		if (feeRange.equals("0-500")) {
+//			feesBelow500RadioButton.click();
+//		}
+//		else if (feeRange.equals("Above 500")) {
+//			feesAbove500RadioButton.click();
+//		}
+//		else if (feeRange.equals("Above 1000")) {
+//			feesAbove1000RadioButton.click();
+//		}
+//		else if (feeRange.equals("Above 2000")) {
+//			feesAbove2000RadioButton.click();
+//		}
+//	}
 	
 	public Boolean verifyFees(int priceCheck) {
 		int count = 0;
@@ -169,8 +192,9 @@ public class Search extends BasePage{
 	@FindBy(xpath="//button[text()='anna nagar']")
 	WebElement clickLocation;
 	
-	@FindBy(className="u-grey_3-text uv2-spacer--xs-top")
-	WebElement verifyLocation;
+	// FIXME: class to xpath
+//	@FindBy(className="u-grey_3-text uv2-spacer--xs-top")
+//	WebElement verifyLocation;
 	
 	public void selectLocation(String location) {
 		locationPopUp.sendKeys(location);
@@ -178,12 +202,12 @@ public class Search extends BasePage{
 		clickLocation.click();
 	}
 	
-	public Boolean locationVerification(String location) {
-		if (verifyLocation.getText().contains(location)) {
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
+//	public Boolean locationVerification(String location) {
+//		if (verifyLocation.getText().contains(location)) {
+//			return true;
+//		}
+//		else {
+//			return false;
+//		}
+//	}
 }

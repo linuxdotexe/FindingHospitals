@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features= {".//FeatureFiles/surgeries.feature"}, 
+		features= {".//FeatureFiles/search.feature"}, 
 		glue = "com.practo.stepDefinitions", 
 		plugin = {"pretty","html:reports/report.html","rerun:target/rerun.txt",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
