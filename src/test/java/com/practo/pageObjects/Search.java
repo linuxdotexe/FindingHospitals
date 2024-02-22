@@ -17,6 +17,9 @@ public class Search extends BasePage{
 	public Search(WebDriver driver) {
 		super(driver);
 	}
+
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	
 	@FindBy(xpath="//input[@data-qa-id='omni-searchbox-keyword']")
 	WebElement inputSpecialist;
@@ -32,9 +35,7 @@ public class Search extends BasePage{
 			inputSpecialist.clear();
 			inputSpecialist.sendKeys(specialization);
 			if (specializationSearchFirstSuggestion.isDisplayed()) {
-				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-				wait.until(ExpectedConditions.elementToBeClickable(specializationSearchFirstSuggestion));
-				JavascriptExecutor js = (JavascriptExecutor) driver;
+				wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(specializationSearchFirstSuggestion)));
 				js.executeScript("arguments[0].click()", specializationSearchFirstSuggestion);
 			}
 			
@@ -141,22 +142,34 @@ public class Search extends BasePage{
 	@FindBy(xpath="//div[@data-qa-id='doctor_card']//div[@class='info-section']")
 	public List<WebElement> doctorInfoCard;
 	
-	public List<String> doctorName = new ArrayList<String>();
-	public List<String> doctorSpecialization = new ArrayList<String>();
-	public List<String> doctorLocation = new ArrayList<String>();
+	List<String> doctorName = new ArrayList<String>();
+	List<String> doctorSpecialization = new ArrayList<String>();
+	List<String> doctorExperience = new ArrayList<String>();
+	List<String> doctorLocation = new ArrayList<String>();
 	public List<String> doctorFee = new ArrayList<String>();
 	
-	public void seperateDoctorDetails(List<WebElement> infoCard) {
+	public Boolean seperateAndVerifyDoctorFees(List<WebElement> infoCard, String condition) {
 		for (int i = 0; i < 5; i++) {
-			doctorName.add(infoCard.get(i).getText().split("\\n+")[0]);
-			doctorSpecialization.add(infoCard.get(i).getText().split("\\n+")[1]);
-			doctorLocation.add(infoCard.get(i).getText().split("\\n+")[2]);
-			doctorFee.add(infoCard.get(i).getText().split("\\n+")[3]);
+			wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(infoCard.get(i))));
+			doctorFee.add(infoCard.get(i).getText().split("\\n+")[4].replaceAll("[^0-9]", ""));
 		}
-		System.out.println(doctorName);
-		System.out.println(doctorSpecialization);
-		System.out.println(doctorLocation);
-		System.out.println(doctorFee);
+		
+		Boolean result = false;
+		
+		for (String fee : doctorFee) {
+			if (condition.equals("0-500")) {
+				if (Integer.parseInt(fee) <= 500) {
+					result = true;
+				}
+			} 
+			else if (condition.equals("Above 500")) {
+				if (Integer.parseInt(fee) >= 500) {
+					result = true;
+				}
+			}
+		}
+		
+		return result;
 	}
 
 	@FindBy(xpath="//label[@for='Availability1']")

@@ -18,25 +18,13 @@ Feature: Search
     When user inputs "<Specialization>" in search
     And user clicks on All filters
     And user selects: "<Fee range>" under fees
-    Then verify if the listed doctors have a fee requirement under "<Price Check>"
+    Then verify if the listed doctors have the right fee requirement "<Fee range>"
     
     Examples:
-      | Fee range | Price Check | Location | Specialization |
-      | 0-500     |         500 | Chennai	 | Dentist				|
+      | Fee range  | Location | Specialization |
+      | 0-500      | Chennai	| Dentist				 |
+      | Above 500  | Chennai	| Dentist				 |
 
-  #@regression
-  #Scenario: Filter doctors by fees
-    #Given user navigates to search for doctors
-    #When user clicks on All filters
-    #And user selects: "<Fee range>" under fees
-    #Then verify if the listed doctors have a fee requirement over "<Price Check>"
-    #
-    #Examples:
-      #| Fee range  | Price Check |
-      #| Above 500  |         500 |
-      #| Above 1000 |        1000 |
-      #| Above 2000 |        2000 |
-#
   #@regression
   #Scenario: Filter doctors by availability
     #Given user navigates to search for doctors

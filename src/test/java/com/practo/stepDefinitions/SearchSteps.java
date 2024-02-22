@@ -55,9 +55,10 @@ public class SearchSteps {
 		sh.selectFeeRange(feeRange);
 	}
 	
-	@Then("verify if the listed doctors have a fee requirement under {string}")
-	public void verify_if_the_listed_doctors_have_a_fee_requirement_under(String priceCheck) {
-		sh.seperateDoctorDetails(sh.doctorInfoCard);
+	@Then("verify if the listed doctors have the right fee requirement {string}")
+	public void verify_if_the_listed_doctors_have_the_right_fee_requirement(String priceCheck) {
+		Assert.assertTrue(sh.seperateAndVerifyDoctorFees(sh.doctorInfoCard, priceCheck));
+		System.out.println(sh.doctorFee);
 	}
 
 }

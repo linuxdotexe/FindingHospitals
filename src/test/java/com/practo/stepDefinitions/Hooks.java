@@ -30,7 +30,7 @@ public class Hooks {
 	
 	@After
 	public static void tearDown() {
-//		driver.quit();
+		driver.quit();
 	}
 	
 	@AfterStep
