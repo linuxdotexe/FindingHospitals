@@ -113,6 +113,7 @@ public class Search extends BasePage{
 			feesBelow500RadioButton.click();
 		}
 		else if (feeRange.equals("Above 500")) {
+			wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(feesAbove500RadioButton)));
 			feesAbove500RadioButton.click();
 		}
 		else if (feeRange.equals("Above 1000")) {
@@ -147,6 +148,22 @@ public class Search extends BasePage{
 	List<String> doctorExperience = new ArrayList<String>();
 	List<String> doctorLocation = new ArrayList<String>();
 	List<String> doctorFee = new ArrayList<String>();
+	
+	public void outputDoctorNames() {
+		for (int i = 0; i < 5; i++) {
+			wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(doctorInfoCard.get(i))));
+			doctorName.add(doctorInfoCard.get(i).getText().split("\\n+")[0]);
+			doctorSpecialization.add(doctorInfoCard.get(i).getText().split("\\n+")[1]);
+			doctorExperience.add(doctorInfoCard.get(i).getText().split("\\n+")[2]);
+			doctorLocation.add(doctorInfoCard.get(i).getText().split("\\n+")[3]);
+			doctorFee.add(doctorInfoCard.get(i).getText().split("\\n+")[4]);
+		}
+		System.out.println(doctorName);
+		System.out.println(doctorSpecialization);
+		System.out.println(doctorExperience);
+		System.out.println(doctorLocation);
+		System.out.println(doctorFee);
+	}
 	
 	public Boolean seperateAndVerifyDoctorFees(List<WebElement> infoCard, String condition) {
 		for (int i = 0; i < 5; i++) {
@@ -191,20 +208,14 @@ public class Search extends BasePage{
 	}
 	
 	public Boolean verifyAvailability(String availability) {
-		int count = 0;
+		Boolean result = false;
 		for (int i = 0; i < 5; i++) {
 			String buttonText = verifyAvailability.get(i).getText();
 			if (buttonText.equals(availability)) {
-				count += 1;
+				result = true;
 			}
 		}
-		if (count == 5) {
-			return true;
-		}
-		else {
-			return false;
-		}
-		
+		return result;
 	}
 
 	@FindBy(xpath="//label[@for='Consult-type0']")
@@ -218,13 +229,27 @@ public class Search extends BasePage{
 	}
 	
 	public Boolean verifyVideoConsult() {
-		int count = 0;
-		for (int i = 0; i < 10; i++) {
+		Boolean result = false;
+		for (int i = 0; i < verifyVideoConsultAvailability.size(); i++) {
 			if (verifyVideoConsultAvailability.get(i).isDisplayed()) {
-				count += 1;
+				result = true;
 			}
 		}
-		if (count == 10) {
+		return result;
+	}
+	
+	@FindBy(xpath="//button[text()='anna nagar']")
+	WebElement clickLocation;
+	
+	@FindBy(xpath="//*[@class='u-grey_3-text uv2-spacer--xs-top']")
+	WebElement verifyLocation;
+	
+	public void selectLocation(String location) {
+		clickLocation.click();
+	}
+	
+	public Boolean locationVerification(String location) {
+		if (verifyLocation.getText().contains(location)) {
 			return true;
 		}
 		else {
@@ -232,31 +257,30 @@ public class Search extends BasePage{
 		}
 	}
 	
-	@FindBy(xpath="//input[@data-qa-id='omni-searchbox-locality']")
-	WebElement locationPopUp;
+	@FindBy(xpath="//div[@data-qa-id='years_of_experience_section']")
+	WebElement experienceDropdown;
+
+	@FindBy(xpath="//li[@aria-label='5+ Years of experience']")
+	WebElement experienceFivePlus;
 	
-	@FindBy(xpath="//input[@data-qa-id='omni-suggestion-main']")
-	WebElement locationSelection;
-	
-	@FindBy(xpath="//button[text()='anna nagar']")
-	WebElement clickLocation;
-	
-	// FIXME: class to xpath
-//	@FindBy(className="u-grey_3-text uv2-spacer--xs-top")
-//	WebElement verifyLocation;
-	
-	public void selectLocation(String location) {
-		locationPopUp.sendKeys(location);
-		locationSelection.click();
-		clickLocation.click();
+	public void selectExperience(String experience) {
+		experienceDropdown.click();
+		if (experience.equalsIgnoreCase("5+ Years of experience")) {
+			experienceFivePlus.click();
+		}
 	}
 	
-//	public Boolean locationVerification(String location) {
-//		if (verifyLocation.getText().contains(location)) {
-//			return true;
-//		}
-//		else {
-//			return false;
-//		}
-//	}
+	@FindBy(xpath="//div[@data-qa-id='sort_by_section']")
+	WebElement sortDropdown;
+	
+	@FindBy(xpath="//li[@data-qa-id='doctor_review_count']")
+	WebElement sortSelect;
+	
+	public void selectSort(String sort) {
+		sortDropdown.click();
+		if (sort.equals("Number of patient stories - High to low")) {
+			sortSelect.click();
+		}
+	}
+	
 }

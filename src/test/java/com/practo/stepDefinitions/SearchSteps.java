@@ -46,13 +46,18 @@ public class SearchSteps {
 	}
 	
 	@And("user clicks on All filters")
-	public void when_user_clicks_on_all_features() {
+	public void user_clicks_on_all_features() {
 		sh.clickAllFilters();
 	}
 	
 	@And("user selects: {string} under fees")
 	public void user_selects_under_fees(String feeRange) {
 		sh.selectFeeRange(feeRange);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	@Then("verify if the listed doctors have the right fee requirement {string}")
@@ -63,11 +68,61 @@ public class SearchSteps {
 	@And("user selects: {string} under availability")
 	public void user_selects_under_availability(String availability) {
 		sh.selectAvailability(availability);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	@Then("verify if the availability displayed above book clinic visit matches {string}")
 	public void verify_if_the_availability_displayed_above_book_clinic_visit_matches(String availability) {
-		System.out.println(sh.verifyAvailability(availability));
+		Assert.assertEquals(sh.verifyAvailability(availability), true);
+	}
+	
+	@And("user selects {string} under Consult type")
+	public void user_selects_under_consult_type(String consultType) {
+		sh.selectVideoConsult();
+	}
+	
+	@Then("verify if results displayed are of video consult")
+	public void verify_if_results_displayed_are_of_video_consult() {
+		Assert.assertEquals(sh.verifyVideoConsult(), true);
+	}
+	
+	@And("user clicks {string} under location")
+	public void user_clicks_anna_nagar_under_location(String location) {
+		sh.selectLocation(location);
+	}
+	
+	@Then("verify if the area is selected: {string}")
+	public void verify_if_the_area_is_selected(String area) {
+		Assert.assertEquals(sh.locationVerification(area), true);
+	}
+	
+	@And("user selects {string} under Experience")
+	public void user_selects_under_experience(String experience) {
+		sh.selectExperience(experience);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@And("user selects {string} under sort")
+	public void user_selects_under_sort(String sort) {
+		sh.selectSort(sort);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	@Then("record top five doctor names")
+	public void record_top_five_doctor_names() {
+		sh.outputDoctorNames();
 	}
 
 }
