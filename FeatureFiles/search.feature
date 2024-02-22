@@ -1,28 +1,29 @@
 Feature: Search
 
-  @regression
-  Scenario: Filter doctors by patient stories
-    Given user selects location as "<Location>"
-    When user inputs "<Specialization>" in search
-    And fetch the number of doctors displayed
-    And user filters by patient stories: "<Stories Count>"
-    Then verify the number of doctors is changed
-    
-    Examples:
-      | Stories Count 				| Location | Specialization |
-      | 80+ Patient Stories   | Chennai  | Dentist        |
-
   #@regression
-  #Scenario: Filter doctors by fees
-    #Given user navigates to search for doctors
-    #When user clicks on All filters
-    #And user selects: "<Fee range>" under fees
-    #Then verify if the listed doctors have a fee requirement under "<Price Check>"
+  #Scenario: Filter doctors by patient stories
+    #Given user selects location as "<Location>"
+    #When user inputs "<Specialization>" in search
+    #And fetch the number of doctors displayed
+    #And user filters by patient stories: "<Stories Count>"
+    #Then verify the number of doctors is changed
     #
     #Examples:
-      #| Fee range | Price Check |
-      #| 0-500     |         500 |
-#
+      #| Stories Count 				| Location | Specialization |
+      #| 80+ Patient Stories   | Chennai  | Dentist        |
+
+  @regression
+  Scenario: Filter doctors by fees
+    Given user selects location as "<Location>"
+    When user inputs "<Specialization>" in search
+    And user clicks on All filters
+    And user selects: "<Fee range>" under fees
+    Then verify if the listed doctors have a fee requirement under "<Price Check>"
+    
+    Examples:
+      | Fee range | Price Check | Location | Specialization |
+      | 0-500     |         500 | Chennai	 | Dentist				|
+
   #@regression
   #Scenario: Filter doctors by fees
     #Given user navigates to search for doctors

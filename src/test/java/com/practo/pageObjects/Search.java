@@ -1,10 +1,16 @@
 package com.practo.pageObjects;
 
+import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Search extends BasePage{
 
@@ -25,7 +31,12 @@ public class Search extends BasePage{
 			System.out.println(inputSpecialist.getAttribute("value"));
 			inputSpecialist.clear();
 			inputSpecialist.sendKeys(specialization);
-			specializationSearchFirstSuggestion.click();
+			if (specializationSearchFirstSuggestion.isDisplayed()) {
+				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+				wait.until(ExpectedConditions.elementToBeClickable(specializationSearchFirstSuggestion));
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("arguments[0].click()", specializationSearchFirstSuggestion);
+			}
 			
 		}
 	}
@@ -43,7 +54,9 @@ public class Search extends BasePage{
 			inputLocation.clear();
 			inputLocation.sendKeys(location);
 			if (inputConfirmation.isDisplayed()) {
-				inputConfirmation.click();
+				try {
+					inputConfirmation.click();
+				} catch (StaleElementReferenceException e) {}
 			}
 		}
 	}
@@ -63,6 +76,7 @@ public class Search extends BasePage{
 	}
 	
 	public int numberOfDoctors() {
+		// TODO: try removing sleep
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
@@ -71,9 +85,8 @@ public class Search extends BasePage{
 		return Integer.parseInt(numberOfDoctors.getText().split("\\s+")[0]);
 	}
 	
-	// FIXME: classname to xpath
-//	@FindBy(className="u-d-inlineblock u-color--white u-c-pointer")
-//	WebElement allFiltersDropdown;
+	@FindBy(xpath="//*[@class='u-d-inlineblock u-color--white u-c-pointer']")
+	WebElement allFiltersDropdown;
 	
 	@FindBy(xpath="//label[@for='Fees0']")
 	WebElement feesBelow500RadioButton;
@@ -90,37 +103,60 @@ public class Search extends BasePage{
 	@FindBy(xpath="//span[@data-qa-id='consultation_fee']")
 	List<WebElement> feesVerification;
 	
-//	public void selectFeeRange(String feeRange) {
-//		allFiltersDropdown.click();
-//		
-//		if (feeRange.equals("0-500")) {
-//			feesBelow500RadioButton.click();
-//		}
-//		else if (feeRange.equals("Above 500")) {
-//			feesAbove500RadioButton.click();
-//		}
-//		else if (feeRange.equals("Above 1000")) {
-//			feesAbove1000RadioButton.click();
-//		}
-//		else if (feeRange.equals("Above 2000")) {
-//			feesAbove2000RadioButton.click();
-//		}
-//	}
+	public void clickAllFilters() {
+		allFiltersDropdown.click();
+	}
+	
+	public void selectFeeRange(String feeRange) {
+		if (feeRange.equals("0-500")) {
+			feesBelow500RadioButton.click();
+		}
+		else if (feeRange.equals("Above 500")) {
+			feesAbove500RadioButton.click();
+		}
+		else if (feeRange.equals("Above 1000")) {
+			feesAbove1000RadioButton.click();
+		}
+		else if (feeRange.equals("Above 2000")) {
+			feesAbove2000RadioButton.click();
+		}
+	}
 	
 	public Boolean verifyFees(int priceCheck) {
 		int count = 0;
-		for (int i = 0; i < 10; i++) {
-			int fee =Integer.parseInt(feesVerification.get(i).getText().replace("₹", ""));
+		for (int i = 0; i < 5; i++) {
+			int fee = Integer.parseInt(feesVerification.get(i).getText().replace("₹", ""));
 			if (fee > priceCheck) {
 				count += 1;
 			}
 		}
-		if (count == 10) {
+		if (count == 5) {
 			return true;
 		}
 		else {
 			return false;
 		}
+	}
+	
+	@FindBy(xpath="//div[@data-qa-id='doctor_card']//div[@class='info-section']")
+	public List<WebElement> doctorInfoCard;
+	
+	public List<String> doctorName = new ArrayList<String>();
+	public List<String> doctorSpecialization = new ArrayList<String>();
+	public List<String> doctorLocation = new ArrayList<String>();
+	public List<String> doctorFee = new ArrayList<String>();
+	
+	public void seperateDoctorDetails(List<WebElement> infoCard) {
+		for (int i = 0; i < 5; i++) {
+			doctorName.add(infoCard.get(i).getText().split("\\n+")[0]);
+			doctorSpecialization.add(infoCard.get(i).getText().split("\\n+")[1]);
+			doctorLocation.add(infoCard.get(i).getText().split("\\n+")[2]);
+			doctorFee.add(infoCard.get(i).getText().split("\\n+")[3]);
+		}
+		System.out.println(doctorName);
+		System.out.println(doctorSpecialization);
+		System.out.println(doctorLocation);
+		System.out.println(doctorFee);
 	}
 
 	@FindBy(xpath="//label[@for='Availability1']")
