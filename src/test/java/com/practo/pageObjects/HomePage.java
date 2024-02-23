@@ -1,5 +1,6 @@
 package com.practo.pageObjects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,6 +28,8 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//div[text()='Surgeries']")
 	WebElement surgeriesNavElement;
 	
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	
 	public void visitNavLinks(String linkName) {
 		if (linkName.equals("Find Doctors")) {
 			findDoctorsNavElement.click();
@@ -41,7 +44,11 @@ public class HomePage extends BasePage {
 			labTestsNavElement.click();
 		}
 		else if (linkName.equals("Surgeries")) {
-			surgeriesNavElement.click();
+			try {
+				surgeriesNavElement.click();
+			} catch (Exception e) {
+				js.executeScript("arguments[0].click();", surgeriesNavElement);
+			}
 		}
 	}
 

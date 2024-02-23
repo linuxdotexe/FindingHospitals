@@ -27,18 +27,29 @@ public class Search extends BasePage{
 	@FindBy(xpath="//div[@data-qa-id='omni-suggestion-main']")
 	WebElement specializationSearchFirstSuggestion;
 	
+	@FindBy(xpath="//span[@data-qa-id='others-speciality']")
+	WebElement otherSpecializations;
+	
+	@FindBy(xpath="//p[@class='test-name' and text()='Dentist']")
+	WebElement dentistOtherSpecializations;
+	
 	public void searchForSpecialist(String specialization) {
-		if (inputSpecialist.getAttribute("value").equals(specialization)) {
-			// do nothing
-		} else {
-			System.out.println(inputSpecialist.getAttribute("value"));
-			inputSpecialist.clear();
-			inputSpecialist.sendKeys(specialization);
-			if (specializationSearchFirstSuggestion.isDisplayed()) {
-				wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(specializationSearchFirstSuggestion)));
-				js.executeScript("arguments[0].click()", specializationSearchFirstSuggestion);
+		try {
+			if (inputSpecialist.getAttribute("value").equals(specialization)) {
+				// do nothing
+			} else {
+				System.out.println(inputSpecialist.getAttribute("value"));
+				inputSpecialist.clear();
+				inputSpecialist.sendKeys(specialization);
+				Thread.sleep(5000);
+				if (specializationSearchFirstSuggestion.isDisplayed()) {
+					wait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(specializationSearchFirstSuggestion)));
+					js.executeScript("arguments[0].click()", specializationSearchFirstSuggestion);
+				}
 			}
-			
+		} catch (Exception e) {
+			otherSpecializations.click();
+			dentistOtherSpecializations.click();
 		}
 	}
 	

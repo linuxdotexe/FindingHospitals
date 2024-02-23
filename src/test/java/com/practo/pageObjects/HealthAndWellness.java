@@ -2,6 +2,7 @@ package com.practo.pageObjects;
 
 import java.time.Duration;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -78,15 +79,28 @@ public class HealthAndWellness extends BasePage{
 		scheduleDemoButton.click();
 	}
 	
-	@FindBy(xpath="//div[@aria-label='Thank you']/div/div")
+//	@FindBy(xpath="//div[@aria-label='Thank you']/div/div")
+	@FindBy(xpath="/html/body/div[3]/div/div/div/div[1]")
 	WebElement thankYouMessage;
 	
 	public String fetchThankYouMessage() {
 		if (thankYouMessage.isDisplayed() == false) {
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 			wait.until(ExpectedConditions.visibilityOf(thankYouMessage));
 		}
-		return thankYouMessage.getText();
+		// NOTE: this is a cry for help.
+		try {
+			return thankYouMessage.getText();
+		} catch (NoSuchElementException e) {
+			try {
+				Thread.sleep(10);
+				System.out.println("i waited 10 more");
+			} catch (InterruptedException e1) {
+				e1.printStackTrace();
+			}
+			return thankYouMessage.getText();
+		}
 	}
 
 }

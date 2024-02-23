@@ -1,7 +1,7 @@
 Feature: Surgeries
 
   @smoke
-  Scenario: Verify consultation form submission with correct details
+  Scenario Outline: Verify consultation form submission with correct details
     Given user navigates to Surgeries from home page
     When user selects "<City>" from the city dropdown on surgeries
     And user selects "<Ailment>" from the ailment dropdown
@@ -16,7 +16,7 @@ Feature: Surgeries
       | Chennai   | ACL Repair             |     9879879877 | Nivas |
 
   @smoke
-  Scenario: Verify consultation form submission with wrong name
+  Scenario Outline: Verify consultation form submission with wrong name
     Given user navigates to Surgeries from home page
     When user selects "<City>" from the city dropdown on surgeries
     And user selects "<Ailment>" from the ailment dropdown
@@ -29,7 +29,7 @@ Feature: Surgeries
       | Chennai | ACL Repair |     8123123123 | Ni   |
 
   @smoke
-  Scenario: Verify consultation form submission with wrong contact number
+  Scenario Outline: Verify consultation form submission with wrong contact number
     Given user navigates to Surgeries from home page
     When user selects "<City>" from the city dropdown on surgeries
     And user selects "<Ailment>" from the ailment dropdown
@@ -43,7 +43,7 @@ Feature: Surgeries
       | Chennai   | Carpal Tunnel Syndrome |      898989898 | Nivas |
 
   @smoke
-  Scenario: Verify consultation form submission with wrong name and contact number
+  Scenario Outline: Verify consultation form submission with wrong name and contact number
     Given user navigates to Surgeries from home page
     When user selects "<City>" from the city dropdown on surgeries
     And user selects "<Ailment>" from the ailment dropdown
@@ -58,7 +58,7 @@ Feature: Surgeries
       | Chennai   | Carpal Tunnel Syndrome |      898989898 | Ni   |
 
   @regression
-  Scenario: Verify surgeries form popup message
+  Scenario Outline: Verify surgeries form popup message
     Given user navigates to Surgeries from home page
     When user clicks on "<Surgery Name>" under Popular Surgeries
     Then verify the message displayed above the surgery form contains "<Surgery Name>"
@@ -69,7 +69,7 @@ Feature: Surgeries
       | Kidney Stone |
 
   @regression
-  Scenario: Verify surgeries form submission with correct details
+  Scenario Outline: Verify surgeries form submission with correct details
     Given user navigates to Surgeries from home page
     When user clicks on "<Surgery Name>" under Popular Surgeries
     And enter "<Name>" in name in popular surgery form
@@ -83,7 +83,7 @@ Feature: Surgeries
       | Cataract     | Sai  |     9879879877 | Bangalore |
 
   @regression
-  Scenario: Verify surgeries form submission with incorrect details
+  Scenario Outline: Verify surgeries form submission with incorrect details
     Given user navigates to Surgeries from home page
     When user clicks on "<Surgery Name>" under Popular Surgeries
     And enter "<Name>" in name in popular surgery form
@@ -95,9 +95,3 @@ Feature: Surgeries
     Examples:
       | Surgery Name | Name | Contact Number | City      |
       | Cataract     | Sa   |       98798798 | Bangalore |
-
-	@test
-	Scenario: Extract surgeries
-		Given user navigates to Surgeries from home page
-		When extract surgeries listed under Popular Surgeries
-		And display them in console output

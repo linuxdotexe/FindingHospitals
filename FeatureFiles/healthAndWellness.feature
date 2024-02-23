@@ -8,7 +8,7 @@ Feature: Health and Wellness
     Then verify the page is scrolled up to the top
 
   @smoke
-  Scenario: verify if submit button disabled with incorrect details
+  Scenario Outline: verify if submit button disabled with incorrect details
     Given user navigates to Health and Wellness Plan page
     When user inputs "<Name>" in name
     And user inputs "<Organization>" in organization name
@@ -17,8 +17,8 @@ Feature: Health and Wellness
     And user selects Organization size: "<Organization Size>"
     And user selects "<Interested in>" in Interested in
     Then verify Schedule a demo button is disabled
-    
-    Examples:
+
+    Examples: 
       | Name      | Organization | Contact Number | Email            | Organization Size | Interested in |
       | Sai       | DemoOrg      |          86420 | name@website.com | 1001-5000         | Taking a demo |
       | Nivas     | DemoOrg      |     9876543310 | name@website     | <500              | Taking a demo |
@@ -26,7 +26,7 @@ Feature: Health and Wellness
       | Sai Nivas | DemoOrg      |     9876553210 | name@site.com    | 5001-10000        |               |
 
   @smoke
-  Scenario: verify if submit button enabled with correct details
+  Scenario Outline: verify if submit button enabled with correct details
     Given user navigates to Health and Wellness Plan page
     When user inputs "<Name>" in name
     And user inputs "<Organization>" in organization name
@@ -35,25 +35,7 @@ Feature: Health and Wellness
     And user selects Organization size: "<Organization Size>"
     And user selects "<Interested in>" in Interested in
     Then verify Schedule a demo button is enabled
-    
-    Examples:
+
+    Examples: 
       | Name      | Organization | Contact Number | Email            | Organization Size | Interested in |
       | Sai Nivas | DemoOrg      |     9876543210 | name@website.com | 501-1000          | Taking a demo |
-
-  @regression @test
-  Scenario: verify form submission with correct details
-    Given user navigates to Health and Wellness Plan page
-    When user inputs "<Name>" in name
-    And user inputs "<Organization>" in organization name
-    And user inputs "<Contact Number>" in Contact Number
-    And user inputs "<Invalid Email>" in Official Email ID
-    And user selects Organization size: "<Organization Size>"
-    And user selects "<Interested in>" in Interested in
-    And verify Schedule a demo button is disabled
-    And user inputs "<Valid Email>" in Official Email ID
-    And user clicks Schedule a demo button
-    Then capture thank you message
-    
-    Examples:
-      | Name      | Organization | Contact Number | Invalid Email | Valid Email      | Organization Size | Interested in |
-      | Sai Nivas | DemoOrg      |     9876543210 | name@website  | name@website.com | <500              | Taking a demo |

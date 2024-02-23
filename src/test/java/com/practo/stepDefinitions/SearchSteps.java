@@ -38,6 +38,11 @@ public class SearchSteps {
 	@And("user filters by patient stories: {string}")
 	public void user_filters_by_patient_stories(String stories) {
 		sh.filterByPatientStories(stories);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Then("verify the number of doctors is changed")
