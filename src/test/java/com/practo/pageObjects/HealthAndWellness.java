@@ -19,6 +19,7 @@ public class HealthAndWellness extends BasePage{
 	@FindBy(xpath="//button[@class='mweb-hide sticky_side_bar text-alpha u-text--bold']")
 	WebElement scheduleDemoNavButton;
 	
+	// Click the "Schedule A Demo" scroll navigation button
 	public void clickScheduleDemoNavButton() {
 		scheduleDemoButton.click();
 	}
@@ -43,59 +44,62 @@ public class HealthAndWellness extends BasePage{
 	
 	@FindBy(xpath="//button[text()='Schedule a demo']")
 	public WebElement scheduleDemoButton;
-	
+
+	// Input name
 	public void fillName(String name) {
 		nameInputSchedule.sendKeys(name);
 	}
-
+	// Input Organization name
 	public void fillOrganization(String orgName) {
 		orgInputSchedule.sendKeys(orgName);
 	}
-
+	// Input Contact Information
 	public void fillContact(String contact) {
 		contactInputSchedule.sendKeys(contact);
 	}
-	
+	// Input Email
 	public void fillEmail(String email) {
 		emailInputSchedule.clear();
 		emailInputSchedule.sendKeys(email);
 	}
 	
+	// Select organization from dropdown
 	public void selectOrgSize(String orgSize) {
 		Select orgSizeSelect = new Select(orgSizeSelectSchedule);
 		orgSizeSelect.selectByVisibleText(orgSize);
 	}
 
+	// Select Interest from dropdown
 	public void selectInterest(String interestedIn) {
 		Select interestedInSelect = new Select(interestedInSelectSchedule);
 		interestedInSelect.selectByVisibleText(interestedIn);
 	}
 	
+	// Check and return the status of the Schedule a Demo button
 	public Boolean isScheduleDemoButtonEnabled() {
 		return scheduleDemoButton.isEnabled();
 	}
 	
+	// Click the Schedule a Demo button
 	public void submitForm() {
 		scheduleDemoButton.click();
 	}
 	
-//	@FindBy(xpath="//div[@aria-label='Thank you']/div/div")
 	@FindBy(xpath="/html/body/div[3]/div/div/div/div[1]")
 	WebElement thankYouMessage;
 	
+	// Fetch Thank You message after form submission
 	public String fetchThankYouMessage() {
 		if (thankYouMessage.isDisplayed() == false) {
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 			wait.until(ExpectedConditions.visibilityOf(thankYouMessage));
 		}
-		// NOTE: this is a cry for help.
 		try {
 			return thankYouMessage.getText();
 		} catch (NoSuchElementException e) {
 			try {
 				Thread.sleep(10);
-				System.out.println("i waited 10 more");
 			} catch (InterruptedException e1) {
 				e1.printStackTrace();
 			}

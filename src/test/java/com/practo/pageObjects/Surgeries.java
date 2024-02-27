@@ -69,14 +69,12 @@ public class Surgeries extends BasePage {
 	@FindBy(id="Phone-AIlment-Lead-Form")
 	WebElement surgeriesFormPhoneInput;
 	
-	// TODO: check if this actually works
 	@FindBy(xpath="//span[text()='City*']/parent::div")
 	WebElement surgeriesFormCityDropdown;
 	
 	@FindBy(xpath="//button[text()='Book Appointment' and @class='ailmentLeadForm-module_submit-cta__oKug8']")
 	WebElement surgeriesBookAppointmentButton;
 	
-	// TODO: verify if you can use the existing XPaths
 	@FindBy(xpath="//div[text()='Invalid User Name']")
 	WebElement surgeriesErrorMessageName;
 	
@@ -89,6 +87,7 @@ public class Surgeries extends BasePage {
 	@FindBy(xpath="//p[@data-qa-id='surgical-solution-ailment-name']")
 	List<WebElement> popularSurgeries;
 	
+	// Output surgeries listed under popular surgeries
 	public void outputPopularSurgeries() {
 		for (WebElement ailmentName : popularSurgeries) {
 			System.out.println(ailmentName.getText());
@@ -96,6 +95,7 @@ public class Surgeries extends BasePage {
 		System.out.println("Total Count of Popular Surgeries: " + popularSurgeries.size());
 	}
 	
+	// Select city from dropdown
 	public void selectCityFromDropdown(String city) {
 		cityDropdown.click();
 		if (city.equals("Bangalore")) {
@@ -106,6 +106,7 @@ public class Surgeries extends BasePage {
 		}
 	}
 	
+	// Select ailment from dropdown
 	public void selectAilmentFromDropdown(String ailment) {
 		ailmentDropdown.click();
 		if (ailment.equals("Carpal Tunnel Syndrome")) {
@@ -116,31 +117,38 @@ public class Surgeries extends BasePage {
 		}
 	}
 	
+	// Input name
 	public void nameInputSurgeriesForm(String name) {
 		nameInput.sendKeys(name);
 	}
 	
+	// Input contact information
 	public void contactInputSurgeriesForm(String contact) {
 		contactNumberInput.sendKeys(contact);
 	}
 	
+	// Click book appointment button
 	public void bookAppointment() {
 		bookAppointmentButton.click();
 	}
 	
+	// Verify mobile number from the OTP pop-up
 	public String verifyMobileNumber() {
 		driver.switchTo().frame(frame);
 		return mobileNumberVerification.getText();
 	}
 	
+	// read error message displayed under name
 	public String getNameErrorMessage() {
 		return errorMessageName.getText();
 	}
 	
+	// read error message displayed under contact
 	public String getContactErrorMessage() {
 		return errorMessageContact.getText();
 	}
 	
+	// click surgery name asked for
 	public void clickSurgery(String surgeryName) {
 		if (surgeryName.equals("Cataract")) {
 			surgeryNameCataract.click();
@@ -150,18 +158,22 @@ public class Surgeries extends BasePage {
 		}
 	}
 
+	// return form opening message
 	public String returnSurgeriesFormMessage() {
 		return surgeriesFormMessage.getText();
 	}
 	
+	// Input name
 	public void fillSurgeryName(String name) {
 		surgeriesFormNameInput.sendKeys(name);
 	}
 
+	// Input contact information
 	public void fillSurgeryContact(String contact) {
 		surgeriesFormPhoneInput.sendKeys(contact);
 	}
 
+	// Select city
 	public void selectCitySurgeryForm(String city) {
 		surgeriesFormCityDropdown.click();
 		if (city.equals("Bangalore")) {
@@ -169,6 +181,7 @@ public class Surgeries extends BasePage {
 		}
 	}
 
+	// Submit form
 	public void submitSurgeryForm() {
 		surgeriesBookAppointmentButton.click();
 	}

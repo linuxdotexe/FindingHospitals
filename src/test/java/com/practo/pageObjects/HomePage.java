@@ -11,8 +11,6 @@ public class HomePage extends BasePage {
 		super(driver);
 	}
 	
-	// TODO: find out if you can pass vars in the xpath
-	
 	@FindBy(xpath="//div[text()='Find Doctors']")
 	WebElement findDoctorsNavElement;
 	
@@ -30,6 +28,7 @@ public class HomePage extends BasePage {
 	
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	
+	// Click the navigation item
 	public void visitNavLinks(String linkName) {
 		if (linkName.equals("Find Doctors")) {
 			findDoctorsNavElement.click();
@@ -58,15 +57,10 @@ public class HomePage extends BasePage {
 	@FindBy(linkText="Health & Wellness Plans")
 	WebElement healthWellnessButton;
 	
+	// Click Health and Wellness under For Corporates
 	public void navigateToHealthWellness() {
 		forCorporatesDropdown.click();
 		healthWellnessButton.click();
 	}
 
-	@FindBy(xpath="//span[text()='Search for doctors']/parent::a")
-	WebElement searchForDoctors;
-	
-	public void navigateToSearchForDoctors() {
-		searchForDoctors.click();
-	}
 }
