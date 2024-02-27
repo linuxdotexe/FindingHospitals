@@ -168,12 +168,14 @@ public class Search extends BasePage{
 			doctorExperience.add(doctorInfoCard.get(i).getText().split("\\n+")[2]);
 			doctorLocation.add(doctorInfoCard.get(i).getText().split("\\n+")[3]);
 			doctorFee.add(doctorInfoCard.get(i).getText().split("\\n+")[4]);
+			
+			System.out.println("Doctor Name: " + doctorName.get(i));
+			System.out.println("Doctor Specialization: " + doctorSpecialization.get(i));
+			System.out.println("Doctor Experience: " + doctorExperience.get(i));
+			System.out.println("Doctor Location: " + doctorLocation.get(i));
+			System.out.println("Doctor Fee: " + doctorFee.get(i));
+			System.out.println("\n");
 		}
-		System.out.println(doctorName);
-		System.out.println(doctorSpecialization);
-		System.out.println(doctorExperience);
-		System.out.println(doctorLocation);
-		System.out.println(doctorFee);
 	}
 	
 	public Boolean seperateAndVerifyDoctorFees(List<WebElement> infoCard, String condition) {

@@ -77,7 +77,7 @@ public class HealthAndWellnessSteps {
 	@And("user selects {string} in Interested in")
 	public void user_selects_in_interested_in(String interest) {
 		if (interest.equals("")) {
-			// NOTE: do nothing to leave the field empty.
+			// do nothing to leave the field empty.
 		} else {
 			hw.selectInterest(interest);
 		}
