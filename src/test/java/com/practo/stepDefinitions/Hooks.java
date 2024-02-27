@@ -22,7 +22,7 @@ public class Hooks {
 	
 	@Before
 	public static void setup() throws IOException{
-		driver = BaseClass.initializeBrowse();		
+		driver = BaseClass.initializeBrowser();		
 		p = BaseClass.getProperties();
 		driver.manage().window().maximize();
 		driver.get(p.getProperty("appUrl"));
