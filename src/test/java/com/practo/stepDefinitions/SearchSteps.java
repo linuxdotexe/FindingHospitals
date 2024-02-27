@@ -3,7 +3,6 @@ package com.practo.stepDefinitions;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-import com.practo.pageObjects.HomePage;
 import com.practo.pageObjects.Search;
 import com.practo.utils.BaseClass;
 
@@ -15,7 +14,6 @@ import io.cucumber.java.en.When;
 public class SearchSteps {
 
 	WebDriver driver = BaseClass.getDriver();
-	HomePage hp = new HomePage(driver);
 	Search sh = new Search(driver);
 	
 	int noOfDoctors;
