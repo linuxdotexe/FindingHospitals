@@ -99,7 +99,11 @@ public class HealthAndWellness extends BasePage{
 			return thankYouMessage.getText();
 		} catch (NoSuchElementException e) {
 			try {
-				Thread.sleep(10);
+				/*
+				 * Sometimes the user is required to fill the captcha
+				 * more than two times. This is emergency extra time.
+				 * */
+				Thread.sleep(5000);
 			} catch (InterruptedException e1) {
 				e1.printStackTrace();
 			}

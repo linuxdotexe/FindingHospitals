@@ -5,7 +5,7 @@ import org.testng.Assert;
 
 import com.practo.pageObjects.HomePage;
 import com.practo.pageObjects.Surgeries;
-import com.practo.utils.BaseClass;
+import com.practo.utils.DriverSetup;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -13,7 +13,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SurgeriesSteps {
-	WebDriver driver = BaseClass.getDriver();
+	WebDriver driver = DriverSetup.getDriver();
 	HomePage hp = new HomePage(driver);
 	Surgeries sg = new Surgeries(driver);
 	

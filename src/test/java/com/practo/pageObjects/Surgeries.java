@@ -100,7 +100,7 @@ public class Surgeries extends BasePage {
 		for (int i = 0; i < popularSurgeries.size(); i++) {
 			System.out.println(popularSurgeries.get(i).getText());
 			try {
-				ExcelUtils.write("Surgeries", i+1 , 0, "Surgery Name");
+				ExcelUtils.write("Surgeries", i+1 , 0, popularSurgeries.get(i).getText());
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

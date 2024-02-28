@@ -1,10 +1,13 @@
 package com.practo.stepDefinitions;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.practo.pageObjects.Search;
-import com.practo.utils.BaseClass;
+import com.practo.utils.DriverSetup;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -13,8 +16,9 @@ import io.cucumber.java.en.When;
 
 public class SearchSteps {
 
-	WebDriver driver = BaseClass.getDriver();
+	WebDriver driver = DriverSetup.getDriver();
 	Search sh = new Search(driver);
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	
 	int noOfDoctors;
 	
@@ -32,6 +36,12 @@ public class SearchSteps {
 	public void fetch_the_number_of_doctors_displayed() {
 		noOfDoctors = sh.numberOfDoctors();
 	}
+
+		/*
+		 * All static waits at filter selections are
+		 * necessary because the page takes
+		 * time to load after the click happens.
+		 */
 
 	@And("user filters by patient stories: {string}")
 	public void user_filters_by_patient_stories(String stories) {

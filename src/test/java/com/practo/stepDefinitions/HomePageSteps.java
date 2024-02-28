@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 import com.practo.pageObjects.HomePage;
-import com.practo.utils.BaseClass;
+import com.practo.utils.DriverSetup;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,7 +12,7 @@ import io.cucumber.java.en.When;
 
 public class HomePageSteps {
 	
-	WebDriver driver = BaseClass.getDriver();
+	WebDriver driver = DriverSetup.getDriver();
 	HomePage hp = new HomePage(driver);
 	
 	@Given("user opens practo home page")
