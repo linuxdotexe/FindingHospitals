@@ -1,7 +1,7 @@
 Feature: Search
 
   @regression
-  Scenario Outline: Filter doctors by patient stories
+  Scenario Outline: Filter doctors by patient stories on the Search page
     Given user clicks on "<Navigation Item>"
     When user selects location as "<Location>"
     And user inputs "<Specialization>" in search
@@ -14,7 +14,7 @@ Feature: Search
       | Find Doctors    | 80+ Patient Stories | Chennai  | Dentist        |
 
   @regression
-  Scenario Outline: Filter doctors by fees
+  Scenario Outline: Filter doctors by fees on the Search page
     Given user clicks on "<Navigation Item>"
     When user selects location as "<Location>"
     And user inputs "<Specialization>" in search
@@ -28,7 +28,7 @@ Feature: Search
       | Find Doctors    | Above 500 | Chennai  | Dentist        |
 
   @regression
-  Scenario Outline: Filter doctors by availability
+  Scenario Outline: Filter doctors by availability on the Search page
     Given user clicks on "<Navigation Item>"
     When user selects location as "<Location>"
     And user inputs "<Specialization>" in search
@@ -42,7 +42,7 @@ Feature: Search
       | Find Doctors    | Available Tomorrow | Chennai  | Dentist        |
 
   @regression
-  Scenario Outline: Filter doctors by video consult availability
+  Scenario Outline: Filter doctors by video consult availability on the Search page
     Given user clicks on "<Navigation Item>"
     When user selects location as "<Location>"
     And user inputs "<Specialization>" in search
@@ -55,7 +55,7 @@ Feature: Search
       | Find Doctors    | Video Consult | Chennai  | Dentist        |
 
   @regression
-  Scenario Outline: Filter doctors location in Chennai
+  Scenario Outline: Filter doctors location in Chennai on the Search page
     Given user clicks on "<Navigation Item>"
     When user selects location as "<Location>"
     And user inputs "<Specialization>" in search

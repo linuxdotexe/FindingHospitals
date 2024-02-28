@@ -1,7 +1,7 @@
 Feature: Home Page
 
   @smoke
-  Scenario Outline: Verify navigation items
+  Scenario Outline: Verify navigation items on the Home Page
     Given user opens practo home page
     When user clicks on "<Navigation Item>"
     Then verify page title "<Page Title>"

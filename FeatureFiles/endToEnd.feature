@@ -1,7 +1,7 @@
 Feature: End to End happy flow execution
 
   @test
-  Scenario Outline: Search Doctors
+  Scenario Outline: Search for doctors using the specified filters and accquire top five results
     Given user clicks on "<Navigation Item>"
     When user selects location as "<Location>"
     And user inputs "<Specialization>" in search
@@ -19,13 +19,13 @@ Feature: End to End happy flow execution
       | Find Doctors    | Dentist        | Chennai  | 80+ Patient Stories | 5+ Years of experience | Above 500 | Available Today | Number of patient stories - High to low |
 
   @test
-  Scenario: Extract surgeries
+  Scenario: Extract the surgeries listed as Popular Surgeries on the Surgeries page
     Given user navigates to Surgeries from home page
     When extract surgeries listed under Popular Surgeries
     And display them in console output
 
   @regression @test
-  Scenario Outline: verify form submission with correct details
+  Scenario Outline: verify form submission with correct details by capturing Thank You message on the Health and Wellness page
     Given user navigates to Health and Wellness Plan page
     When user inputs "<Name>" in name
     And user inputs "<Organization>" in organization name

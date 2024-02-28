@@ -1,14 +1,14 @@
 Feature: Health and Wellness
 
   @sanity
-  Scenario: verify Schedule a demo button navigation
+  Scenario: verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page
     Given user navigates to Health and Wellness Plan page
     When user scrolls down to the bottom of the page
     And user clicks the Schedule a demo button
     Then verify the page is scrolled up to the top
 
   @smoke
-  Scenario Outline: verify if submit button disabled with incorrect details
+  Scenario Outline: verify if the submit button is disabled with incorrect details on the Health and Wellness Page
     Given user navigates to Health and Wellness Plan page
     When user inputs "<Name>" in name
     And user inputs "<Organization>" in organization name
@@ -26,7 +26,7 @@ Feature: Health and Wellness
       | Sai Nivas | DemoOrg      |     9876553210 | name@site.com    | 5001-10000        |               |
 
   @smoke
-  Scenario Outline: verify if submit button enabled with correct details
+  Scenario Outline: verify if submit button enabled with correct details on the Health and Wellness Plan page
     Given user navigates to Health and Wellness Plan page
     When user inputs "<Name>" in name
     And user inputs "<Organization>" in organization name
