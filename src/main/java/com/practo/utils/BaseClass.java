@@ -19,12 +19,9 @@ public class BaseClass {
 	static WebDriver driver;
 	static Properties p;
 
-	public static WebDriver initializeBrowser() throws IOException {
-
-		// TODO: Figure out automated multiple browser testing
+	public static WebDriver initializeBrowser(String browser) throws IOException {
 
 		String os = getProperties().getProperty("os");
-		String browser = getProperties().getProperty("browser");
 
 		if (getProperties().getProperty("execution_env").equals("remote")) {
 			DesiredCapabilities capabalities = new DesiredCapabilities();
