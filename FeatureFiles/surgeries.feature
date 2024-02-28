@@ -3,7 +3,7 @@ Feature: Surgeries
   @smoke
   Scenario Outline: Verify consultation form submission with correct details
     Given user navigates to Surgeries from home page
-    When user selects "<City>" from the city dropdown on surgeries
+    When user selects "<City>" from the city dropdown on surgeries page
     And user selects "<Ailment>" from the ailment dropdown
     And user inputs "<Name>" in name on surgeries
     And user inputs "<Contact Number>" in Contact Number on surgeries
