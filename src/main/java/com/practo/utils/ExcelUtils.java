@@ -32,7 +32,7 @@ public class ExcelUtils {
 		XSSFRow row =sheet.getRow(rownum);   
 		XSSFCell cell=row.createCell(colnum); 
 		cell.setCellValue(data); 
-		FileOutputStream fo=new FileOutputStream(System.getProperty("user.dir")+"\\TestData\\ExcelFile.xlsx");
+		FileOutputStream fo=new FileOutputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\Output.xlsx");
  
 		book.write(fo);
 		book.close();
