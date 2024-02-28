@@ -1,5 +1,6 @@
 package com.practo.pageObjects;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +12,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.practo.utils.ExcelUtils;
 
 public class Search extends BasePage {
 
@@ -145,6 +148,15 @@ public class Search extends BasePage {
 
 	// Output top five doctor names
 	public void outputDoctorNames() {
+			try {
+				ExcelUtils.write("DoctorDetails", 0, 0, "Doctor Name");
+				ExcelUtils.write("DoctorDetails", 0, 1, "Doctor Specialization");
+				ExcelUtils.write("DoctorDetails", 0, 2, "Doctor Experience");
+				ExcelUtils.write("DoctorDetails", 0, 3, "Doctor Location");
+				ExcelUtils.write("DoctorDetails", 0, 4, "Doctor Fee");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		for (int i = 0; i < 5; i++) {
 			wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(doctorInfoCard.get(i))));
 			doctorName.add(doctorInfoCard.get(i).getText().split("\\n+")[0]);
@@ -159,6 +171,15 @@ public class Search extends BasePage {
 			System.out.println("Doctor Location: " + doctorLocation.get(i));
 			System.out.println("Doctor Fee: " + doctorFee.get(i));
 			System.out.println("\n");
+			try {
+				ExcelUtils.write("DoctorDetails", i+1, 0, doctorName.get(i));
+				ExcelUtils.write("DoctorDetails", i+1, 1, doctorSpecialization.get(i));
+				ExcelUtils.write("DoctorDetails", i+1, 2, doctorExperience.get(i));
+				ExcelUtils.write("DoctorDetails", i+1, 3, doctorLocation.get(i));
+				ExcelUtils.write("DoctorDetails", i+1, 4, doctorFee.get(i));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 

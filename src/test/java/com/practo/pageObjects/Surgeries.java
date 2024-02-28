@@ -1,10 +1,13 @@
 package com.practo.pageObjects;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import com.practo.utils.ExcelUtils;
 
 public class Surgeries extends BasePage {
 
@@ -89,8 +92,18 @@ public class Surgeries extends BasePage {
 	
 	// Output surgeries listed under popular surgeries
 	public void outputPopularSurgeries() {
-		for (WebElement ailmentName : popularSurgeries) {
-			System.out.println(ailmentName.getText());
+		try {
+			ExcelUtils.write("Surgeries", 0, 0, "Surgery Name");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		for (int i = 0; i < popularSurgeries.size(); i++) {
+			System.out.println(popularSurgeries.get(i).getText());
+			try {
+				ExcelUtils.write("Surgeries", i+1 , 0, "Surgery Name");
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 		System.out.println("Total Count of Popular Surgeries: " + popularSurgeries.size());
 	}
