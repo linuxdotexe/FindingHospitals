@@ -50,6 +50,7 @@ public class TestNGRunner extends AbstractTestNGCucumberTests{
 	
 	@AfterStep
 	public void addScreenshot(Scenario scenario) {
+		// TODO: hooks from session 9
 		// For cucumber JUnit report
 			System.out.println(scenario.getName());
 			File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
