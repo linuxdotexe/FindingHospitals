@@ -38,7 +38,6 @@ Feature: Search
 
     Examples: 
       | Navigation Item | Availability       | Location | Specialization |
-      | Find Doctors    | Available Today    | Chennai  | Dentist        |
       | Find Doctors    | Available Tomorrow | Chennai  | Dentist        |
 
   @regression

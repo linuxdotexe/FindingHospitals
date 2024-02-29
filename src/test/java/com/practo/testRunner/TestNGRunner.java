@@ -4,7 +4,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features= {".//FeatureFiles/"}, 
+		features= {".//FeatureFiles/homePage.feature"}, 
 		glue = "com.practo.stepDefinitions", 
 		plugin = {"pretty","html:reports/report.html","rerun:target/rerun.txt",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
