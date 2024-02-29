@@ -25,9 +25,10 @@ public class DriverSetup {
 	static WebDriver driver;
 	static Properties p;
 
-	public static WebDriver initializeBrowser(String browser) throws IOException {
+	public static WebDriver initializeBrowser() throws IOException {
 
 		String os = getProperties().getProperty("os");
+		String browser = getProperties().getProperty("browser");
 
 		if (getProperties().getProperty("execution_env").equals("remote")) {
 			DesiredCapabilities capabalities = new DesiredCapabilities();
