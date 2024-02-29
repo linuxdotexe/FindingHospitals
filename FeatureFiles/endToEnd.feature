@@ -15,8 +15,8 @@ Feature: End to End happy flow execution
     Then record top five doctor names
 
     Examples: 
-      | Navigation Item | Specialization | Location | Patient Stories     | Experience             | Fees      | Availability    | Sort                                    |
-      | Find Doctors    | Dentist        | Chennai  | 80+ Patient Stories | 5+ Years of experience | Above 500 | Available Today | Number of patient stories - High to low |
+      | Navigation Item | Specialization | Location | Patient Stories     | Experience             | Fees      | Availability       | Sort                                    |
+      | Find Doctors    | Dentist        | Chennai  | 80+ Patient Stories | 5+ Years of experience | Above 500 | Available Tomorrow | Number of patient stories - High to low |
 
   @test
   Scenario: Extract the surgeries listed as Popular Surgeries on the Surgeries page
