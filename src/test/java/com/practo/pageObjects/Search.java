@@ -66,6 +66,11 @@ public class Search extends BasePage {
 		} else {
 			inputLocation.clear();
 			inputLocation.sendKeys(location);
+			try {
+				Thread.sleep(3000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			if (inputConfirmation.isDisplayed()) {
 				try {
 					inputConfirmation.click();
