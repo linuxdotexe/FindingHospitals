@@ -1,0 +1,4407 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 7, 2024 01:18:53 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@test</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">End to End happy flow execution</p>
+            <p class="text-sm">
+              <span>1:18:54 pm</span> / <span>00:00:55:896</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">End to End happy flow execution</h5>
+<span class='badge badge-success'>03.07.2024 1:18:54 pm</span>
+<span class='badge badge-danger'>03.07.2024 1:19:50 pm</span>
+<span class='badge badge-default'>00:00:55:896</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Search for doctors using the specified filters and accquire top five results</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Search for doctors using the specified filters and accquire top five results</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user clicks on "Find Doctors"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Search for doctors using the specified filters and accquire top five results
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects location as "Chennai"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Search for doctors using the specified filters and accquire top five results
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Dentist" in search</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Search for doctors using the specified filters and accquire top five results
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded3.png' src="../Screenshots/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "5+ Years of experience" under Experience</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Search for doctors using the specified filters and accquire top five results
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded4.png' src="../Screenshots/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on All filters</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Search for doctors using the specified filters and accquire top five results
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded5.png' src="../Screenshots/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects: "Above 500" under fees</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Search for doctors using the specified filters and accquire top five results
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded6.png' src="../Screenshots/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user filters by patient stories: "80+ Patient Stories"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Search for doctors using the specified filters and accquire top five results
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded7.png' src="../Screenshots/embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on All filters</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Search for doctors using the specified filters and accquire top five results
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded8.png' src="../Screenshots/embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects: "Available Tomorrow" under availability</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Search for doctors using the specified filters and accquire top five results
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded9.png' src="../Screenshots/embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Number of patient stories - High to low" under sort</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Search for doctors using the specified filters and accquire top five results
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded10.png' src="../Screenshots/embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then record top five doctor names</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Search for doctors using the specified filters and accquire top five results
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded11.png' src="../Screenshots/embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>Extract the surgeries listed as Popular Surgeries on the Surgeries page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()">
+                <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Extract the surgeries listed as Popular Surgeries on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded12.png' src="../Screenshots/embedded12.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.practo.stepDefinitions.SurgeriesSteps.extract_surgeries_listed_under_popular_surgeries()">
+                <span>When extract surgeries listed under Popular Surgeries</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Extract the surgeries listed as Popular Surgeries on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded13.png' src="../Screenshots/embedded13.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.practo.stepDefinitions.SurgeriesSteps.display_them_in_console_output()">
+                <span>And display them in console output</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Extract the surgeries listed as Popular Surgeries on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded14.png' src="../Screenshots/embedded14.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>verify form submission with correct details by capturing Thank You message on the Health and Wellness page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>verify form submission with correct details by capturing Thank You message on the Health and Wellness page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Health and Wellness Plan page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify form submission with correct details by capturing Thank You message on the Health and Wellness page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded15.png' src="../Screenshots/embedded15.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user inputs "Sai Nivas" in name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify form submission with correct details by capturing Thank You message on the Health and Wellness page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded16.png' src="../Screenshots/embedded16.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "DemoOrg" in organization name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify form submission with correct details by capturing Thank You message on the Health and Wellness page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded17.png' src="../Screenshots/embedded17.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "9876543210" in Contact Number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify form submission with correct details by capturing Thank You message on the Health and Wellness page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded18.png' src="../Screenshots/embedded18.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "name@website" in Official Email ID</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify form submission with correct details by capturing Thank You message on the Health and Wellness page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded19.png' src="../Screenshots/embedded19.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects Organization size: "<500"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify form submission with correct details by capturing Thank You message on the Health and Wellness page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded20.png' src="../Screenshots/embedded20.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Taking a demo" in Interested in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify form submission with correct details by capturing Thank You message on the Health and Wellness page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded21.png' src="../Screenshots/embedded21.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And verify Schedule a demo button is disabled</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify form submission with correct details by capturing Thank You message on the Health and Wellness page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded22.png' src="../Screenshots/embedded22.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "name@website.com" in Official Email ID</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify form submission with correct details by capturing Thank You message on the Health and Wellness page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded23.png' src="../Screenshots/embedded23.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks Schedule a demo button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify form submission with correct details by capturing Thank You message on the Health and Wellness page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded24.png' src="../Screenshots/embedded24.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture thank you message</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify form submission with correct details by capturing Thank You message on the Health and Wellness page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded25.png' src="../Screenshots/embedded25.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="63"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Health and Wellness</p>
+            <p class="text-sm">
+              <span>1:19:50 pm</span> / <span>00:00:58:131</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Health and Wellness</h5>
+<span class='badge badge-success'>03.07.2024 1:19:50 pm</span>
+<span class='badge badge-danger'>03.07.2024 1:20:48 pm</span>
+<span class='badge badge-default'>00:00:58:131</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=63</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="64"><span class="badge log pass-bg mr-2">Pass</span>verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.practo.stepDefinitions.HealthAndWellnessSteps.user_navigates_to_health_and_wellness_plan_page()">
+                <span>Given user navigates to Health and Wellness Plan page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded26.png' src="../Screenshots/embedded26.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.practo.stepDefinitions.HealthAndWellnessSteps.scroll_down_until_schedule_a_demo_navigation_helper_is_visible()">
+                <span>When user scrolls down to the bottom of the page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded27.png' src="../Screenshots/embedded27.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.practo.stepDefinitions.HealthAndWellnessSteps.user_clicks_the_schedule_a_demo_button()">
+                <span>And user clicks the Schedule a demo button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded28.png' src="../Screenshots/embedded28.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.practo.stepDefinitions.HealthAndWellnessSteps.verify_the_page_is_scrolled_up_to_the_top()">
+                <span>Then verify the page is scrolled up to the top</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded29.png' src="../Screenshots/embedded29.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="75"><span class="badge log pass-bg mr-2">Pass</span>verify if the submit button is disabled with incorrect details on the Health and Wellness Page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="76"><span class="badge log pass-bg mr-2">Pass</span>verify if the submit button is disabled with incorrect details on the Health and Wellness Page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Health and Wellness Plan page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded30.png' src="../Screenshots/embedded30.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user inputs "Sai" in name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded31.png' src="../Screenshots/embedded31.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "DemoOrg" in organization name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded32.png' src="../Screenshots/embedded32.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "86420" in Contact Number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded33.png' src="../Screenshots/embedded33.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "name@website.com" in Official Email ID</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded34.png' src="../Screenshots/embedded34.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects Organization size: "1001-5000"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded35.png' src="../Screenshots/embedded35.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Taking a demo" in Interested in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded36.png' src="../Screenshots/embedded36.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify Schedule a demo button is disabled</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded37.png' src="../Screenshots/embedded37.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>verify if the submit button is disabled with incorrect details on the Health and Wellness Page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Health and Wellness Plan page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded38.png' src="../Screenshots/embedded38.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user inputs "Nivas" in name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded39.png' src="../Screenshots/embedded39.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "DemoOrg" in organization name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded40.png' src="../Screenshots/embedded40.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "9876543310" in Contact Number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded41.png' src="../Screenshots/embedded41.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "name@website" in Official Email ID</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded42.png' src="../Screenshots/embedded42.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects Organization size: "<500"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded43.png' src="../Screenshots/embedded43.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Taking a demo" in Interested in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded44.png' src="../Screenshots/embedded44.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify Schedule a demo button is disabled</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded45.png' src="../Screenshots/embedded45.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="114"><span class="badge log pass-bg mr-2">Pass</span>verify if the submit button is disabled with incorrect details on the Health and Wellness Page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Health and Wellness Plan page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded46.png' src="../Screenshots/embedded46.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user inputs "Venkata" in name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded47.png' src="../Screenshots/embedded47.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "DemoOrg" in organization name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded48.png' src="../Screenshots/embedded48.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "9876544210" in Contact Number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded49.png' src="../Screenshots/embedded49.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "name@website.co" in Official Email ID</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded50.png' src="../Screenshots/embedded50.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects Organization size: ""</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded51.png' src="../Screenshots/embedded51.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Taking a demo" in Interested in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded52.png' src="../Screenshots/embedded52.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify Schedule a demo button is disabled</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded53.png' src="../Screenshots/embedded53.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="133"><span class="badge log pass-bg mr-2">Pass</span>verify if the submit button is disabled with incorrect details on the Health and Wellness Page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Health and Wellness Plan page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded54.png' src="../Screenshots/embedded54.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user inputs "Sai Nivas" in name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded55.png' src="../Screenshots/embedded55.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "DemoOrg" in organization name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded56.png' src="../Screenshots/embedded56.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "9876553210" in Contact Number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded57.png' src="../Screenshots/embedded57.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "name@site.com" in Official Email ID</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded58.png' src="../Screenshots/embedded58.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects Organization size: "5001-10000"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded59.png' src="../Screenshots/embedded59.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "" in Interested in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded60.png' src="../Screenshots/embedded60.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify Schedule a demo button is disabled</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if the submit button is disabled with incorrect details on the Health and Wellness Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded61.png' src="../Screenshots/embedded61.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="152"><span class="badge log pass-bg mr-2">Pass</span>verify if submit button enabled with correct details on the Health and Wellness Plan page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="153"><span class="badge log pass-bg mr-2">Pass</span>verify if submit button enabled with correct details on the Health and Wellness Plan page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Health and Wellness Plan page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if submit button enabled with correct details on the Health and Wellness Plan page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded62.png' src="../Screenshots/embedded62.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user inputs "Sai Nivas" in name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if submit button enabled with correct details on the Health and Wellness Plan page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded63.png' src="../Screenshots/embedded63.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "DemoOrg" in organization name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if submit button enabled with correct details on the Health and Wellness Plan page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded64.png' src="../Screenshots/embedded64.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "9876543210" in Contact Number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if submit button enabled with correct details on the Health and Wellness Plan page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded65.png' src="../Screenshots/embedded65.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "name@website.com" in Official Email ID</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if submit button enabled with correct details on the Health and Wellness Plan page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded66.png' src="../Screenshots/embedded66.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects Organization size: "501-1000"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if submit button enabled with correct details on the Health and Wellness Plan page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded67.png' src="../Screenshots/embedded67.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Taking a demo" in Interested in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if submit button enabled with correct details on the Health and Wellness Plan page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded68.png' src="../Screenshots/embedded68.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify Schedule a demo button is enabled</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>verify if submit button enabled with correct details on the Health and Wellness Plan page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded69.png' src="../Screenshots/embedded69.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="172"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Home Page</p>
+            <p class="text-sm">
+              <span>1:20:48 pm</span> / <span>00:00:26:143</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Home Page</h5>
+<span class='badge badge-success'>03.07.2024 1:20:48 pm</span>
+<span class='badge badge-danger'>03.07.2024 1:21:14 pm</span>
+<span class='badge badge-default'>00:00:26:143</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=172</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="173"><span class="badge log pass-bg mr-2">Pass</span>Verify navigation items on the Home Page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="174"><span class="badge log pass-bg mr-2">Pass</span>Verify navigation items on the Home Page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user opens practo home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded70.png' src="../Screenshots/embedded70.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks on "Find Doctors"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded71.png' src="../Screenshots/embedded71.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify page title "Practo | Book Doctor Appointments Online, Order Medicine, Diagnostic Tests, Consult"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded72.png' src="../Screenshots/embedded72.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="183"><span class="badge log pass-bg mr-2">Pass</span>Verify navigation items on the Home Page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user opens practo home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded73.png' src="../Screenshots/embedded73.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks on "Video Consult"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded74.png' src="../Screenshots/embedded74.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify page title "Online Doctor Consultation | Ask Top Doctor's Advice 24*7 | Practo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded75.png' src="../Screenshots/embedded75.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="192"><span class="badge log pass-bg mr-2">Pass</span>Verify navigation items on the Home Page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user opens practo home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded76.png' src="../Screenshots/embedded76.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks on "Medicines"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded77.png' src="../Screenshots/embedded77.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify page title "Buy Medicines,Health Products Online | India's Most Reliable Online Medical Store | Practo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded78.png' src="../Screenshots/embedded78.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="201"><span class="badge log pass-bg mr-2">Pass</span>Verify navigation items on the Home Page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user opens practo home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded79.png' src="../Screenshots/embedded79.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks on "Surgeries"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded80.png' src="../Screenshots/embedded80.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify page title "Practo Care Surgeries | End to end care from top surgeons in your city"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded81.png' src="../Screenshots/embedded81.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="210"><span class="badge log pass-bg mr-2">Pass</span>Verify navigation items on the Home Page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user opens practo home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded82.png' src="../Screenshots/embedded82.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks on "Lab Tests"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded83.png' src="../Screenshots/embedded83.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify page title "Blood Tests | Book Diagnostic Tests from Home at Best Prices | Practo"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify navigation items on the Home Page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded84.png' src="../Screenshots/embedded84.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="219"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Search</p>
+            <p class="text-sm">
+              <span>1:21:15 pm</span> / <span>00:01:41:182</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Search</h5>
+<span class='badge badge-success'>03.07.2024 1:21:15 pm</span>
+<span class='badge badge-danger'>03.07.2024 1:22:56 pm</span>
+<span class='badge badge-default'>00:01:41:182</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=219</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="220"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by patient stories on the Search page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="221"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by patient stories on the Search page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user clicks on "Find Doctors"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by patient stories on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded85.png' src="../Screenshots/embedded85.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects location as "Chennai"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by patient stories on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded86.png' src="../Screenshots/embedded86.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Dentist" in search</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by patient stories on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded87.png' src="../Screenshots/embedded87.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And fetch the number of doctors displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by patient stories on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded88.png' src="../Screenshots/embedded88.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user filters by patient stories: "80+ Patient Stories"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by patient stories on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded89.png' src="../Screenshots/embedded89.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify the number of doctors is changed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by patient stories on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded90.png' src="../Screenshots/embedded90.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="236"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by fees on the Search page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="237"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by fees on the Search page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user clicks on "Find Doctors"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded91.png' src="../Screenshots/embedded91.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects location as "Chennai"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded92.png' src="../Screenshots/embedded92.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Dentist" in search</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded93.png' src="../Screenshots/embedded93.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on All filters</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded94.png' src="../Screenshots/embedded94.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects: "0-500" under fees</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded95.png' src="../Screenshots/embedded95.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify if the listed doctors have the right fee requirement "0-500"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded96.png' src="../Screenshots/embedded96.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="252"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by fees on the Search page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user clicks on "Find Doctors"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded97.png' src="../Screenshots/embedded97.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects location as "Chennai"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded98.png' src="../Screenshots/embedded98.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Dentist" in search</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded99.png' src="../Screenshots/embedded99.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on All filters</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded100.png' src="../Screenshots/embedded100.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects: "Above 500" under fees</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded101.png' src="../Screenshots/embedded101.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify if the listed doctors have the right fee requirement "Above 500"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by fees on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded102.png' src="../Screenshots/embedded102.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="267"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by availability on the Search page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="268"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by availability on the Search page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user clicks on "Find Doctors"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded103.png' src="../Screenshots/embedded103.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects location as "Chennai"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded104.png' src="../Screenshots/embedded104.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Dentist" in search</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded105.png' src="../Screenshots/embedded105.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on All filters</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded106.png' src="../Screenshots/embedded106.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects: "Available Tomorrow" under availability</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded107.png' src="../Screenshots/embedded107.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify if the availability displayed above book clinic visit matches "Available Tomorrow"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded108.png' src="../Screenshots/embedded108.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="283"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by video consult availability on the Search page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="284"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors by video consult availability on the Search page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user clicks on "Find Doctors"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by video consult availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded109.png' src="../Screenshots/embedded109.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects location as "Chennai"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by video consult availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded110.png' src="../Screenshots/embedded110.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Dentist" in search</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by video consult availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded111.png' src="../Screenshots/embedded111.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on All filters</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by video consult availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded112.png' src="../Screenshots/embedded112.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Video Consult" under Consult type</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by video consult availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded113.png' src="../Screenshots/embedded113.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify if results displayed are of video consult</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors by video consult availability on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded114.png' src="../Screenshots/embedded114.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="299"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors location in Chennai on the Search page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="300"><span class="badge log pass-bg mr-2">Pass</span>Filter doctors location in Chennai on the Search page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user clicks on "Find Doctors"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors location in Chennai on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded115.png' src="../Screenshots/embedded115.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects location as "Chennai"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors location in Chennai on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded116.png' src="../Screenshots/embedded116.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Dentist" in search</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors location in Chennai on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded117.png' src="../Screenshots/embedded117.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks "Anna Nagar" under location</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors location in Chennai on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded118.png' src="../Screenshots/embedded118.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify if the area is selected: "You are seeing results from anna nagar. See results near you"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Filter doctors location in Chennai on the Search page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded119.png' src="../Screenshots/embedded119.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="313"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Surgeries</p>
+            <p class="text-sm">
+              <span>1:22:56 pm</span> / <span>00:01:22:235</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Surgeries</h5>
+<span class='badge badge-success'>03.07.2024 1:22:56 pm</span>
+<span class='badge badge-danger'>03.07.2024 1:24:18 pm</span>
+<span class='badge badge-default'>00:01:22:235</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=313</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="314"><span class="badge log pass-bg mr-2">Pass</span>Verify consultation form submission with correct details on the Surgeries page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="315"><span class="badge log pass-bg mr-2">Pass</span>Verify consultation form submission with correct details on the Surgeries page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded120.png' src="../Screenshots/embedded120.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects "Bangalore" from the city dropdown on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded121.png' src="../Screenshots/embedded121.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Carpal Tunnel Syndrome" from the ailment dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded122.png' src="../Screenshots/embedded122.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Sai" in name on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded123.png' src="../Screenshots/embedded123.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "9879879877" in Contact Number on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded124.png' src="../Screenshots/embedded124.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click Book Appointment button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded125.png' src="../Screenshots/embedded125.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture mobile number in otp popup</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded126.png' src="../Screenshots/embedded126.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="332"><span class="badge log pass-bg mr-2">Pass</span>Verify consultation form submission with correct details on the Surgeries page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded127.png' src="../Screenshots/embedded127.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects "Chennai" from the city dropdown on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded128.png' src="../Screenshots/embedded128.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "ACL Repair" from the ailment dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded129.png' src="../Screenshots/embedded129.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Nivas" in name on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded130.png' src="../Screenshots/embedded130.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "9879879877" in Contact Number on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded131.png' src="../Screenshots/embedded131.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And click Book Appointment button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded132.png' src="../Screenshots/embedded132.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture mobile number in otp popup</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded133.png' src="../Screenshots/embedded133.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="349"><span class="badge log pass-bg mr-2">Pass</span>Verify consultation form submission with wrong name on the Surgeries page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="350"><span class="badge log pass-bg mr-2">Pass</span>Verify consultation form submission with wrong name on the Surgeries page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded134.png' src="../Screenshots/embedded134.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects "Chennai" from the city dropdown on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded135.png' src="../Screenshots/embedded135.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "ACL Repair" from the ailment dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded136.png' src="../Screenshots/embedded136.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Ni" in name on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded137.png' src="../Screenshots/embedded137.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "8123123123" in Contact Number on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded138.png' src="../Screenshots/embedded138.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture error message displayed below name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded139.png' src="../Screenshots/embedded139.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="365"><span class="badge log pass-bg mr-2">Pass</span>Verify consultation form submission with wrong contact number on the Surgeries page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="366"><span class="badge log pass-bg mr-2">Pass</span>Verify consultation form submission with wrong contact number on the Surgeries page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded140.png' src="../Screenshots/embedded140.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects "Bangalore" from the city dropdown on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded141.png' src="../Screenshots/embedded141.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Carpal Tunnel Syndrome" from the ailment dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded142.png' src="../Screenshots/embedded142.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Sai" in name on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded143.png' src="../Screenshots/embedded143.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "1231231231" in Contact Number on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded144.png' src="../Screenshots/embedded144.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture error message displayed below contact number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded145.png' src="../Screenshots/embedded145.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="381"><span class="badge log pass-bg mr-2">Pass</span>Verify consultation form submission with wrong contact number on the Surgeries page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded146.png' src="../Screenshots/embedded146.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects "Chennai" from the city dropdown on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded147.png' src="../Screenshots/embedded147.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Carpal Tunnel Syndrome" from the ailment dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded148.png' src="../Screenshots/embedded148.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Nivas" in name on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded149.png' src="../Screenshots/embedded149.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "898989898" in Contact Number on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded150.png' src="../Screenshots/embedded150.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture error message displayed below contact number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded151.png' src="../Screenshots/embedded151.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="396"><span class="badge log pass-bg mr-2">Pass</span>Verify consultation form submission with wrong name and contact number on the Surgeries page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="397"><span class="badge log pass-bg mr-2">Pass</span>Verify consultation form submission with wrong name and contact number on the Surgeries page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded152.png' src="../Screenshots/embedded152.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects "Bangalore" from the city dropdown on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded153.png' src="../Screenshots/embedded153.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Carpal Tunnel Syndrome" from the ailment dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded154.png' src="../Screenshots/embedded154.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Sa" in name on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded155.png' src="../Screenshots/embedded155.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "1231231231" in Contact Number on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded156.png' src="../Screenshots/embedded156.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture error message displayed below name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded157.png' src="../Screenshots/embedded157.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture error message displayed below contact number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded158.png' src="../Screenshots/embedded158.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="414"><span class="badge log pass-bg mr-2">Pass</span>Verify consultation form submission with wrong name and contact number on the Surgeries page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded159.png' src="../Screenshots/embedded159.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user selects "Chennai" from the city dropdown on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded160.png' src="../Screenshots/embedded160.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user selects "Carpal Tunnel Syndrome" from the ailment dropdown</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded161.png' src="../Screenshots/embedded161.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "Ni" in name on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded162.png' src="../Screenshots/embedded162.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user inputs "898989898" in Contact Number on surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded163.png' src="../Screenshots/embedded163.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture error message displayed below name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded164.png' src="../Screenshots/embedded164.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture error message displayed below contact number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify consultation form submission with wrong name and contact number on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded165.png' src="../Screenshots/embedded165.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="431"><span class="badge log pass-bg mr-2">Pass</span>Verify surgeries form popup message on the Surgeries page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="432"><span class="badge log pass-bg mr-2">Pass</span>Verify surgeries form popup message on the Surgeries page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form popup message on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded166.png' src="../Screenshots/embedded166.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks on "Cataract" under Popular Surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form popup message on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded167.png' src="../Screenshots/embedded167.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify the message displayed above the surgery form contains "Cataract"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form popup message on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded168.png' src="../Screenshots/embedded168.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="441"><span class="badge log pass-bg mr-2">Pass</span>Verify surgeries form popup message on the Surgeries page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form popup message on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded169.png' src="../Screenshots/embedded169.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks on "Kidney Stone" under Popular Surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form popup message on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded170.png' src="../Screenshots/embedded170.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify the message displayed above the surgery form contains "Kidney Stone"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form popup message on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded171.png' src="../Screenshots/embedded171.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="450"><span class="badge log pass-bg mr-2">Pass</span>Verify surgeries form submission with correct details on the Surgeries page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="451"><span class="badge log pass-bg mr-2">Pass</span>Verify surgeries form submission with correct details on the Surgeries page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded172.png' src="../Screenshots/embedded172.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks on "Cataract" under Popular Surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded173.png' src="../Screenshots/embedded173.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And enter "Sai" in name in popular surgery form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded174.png' src="../Screenshots/embedded174.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And enter "9879879877" in contact number in popular surgery form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded175.png' src="../Screenshots/embedded175.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And select "Bangalore" in the city dropdown in popular surgery form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded176.png' src="../Screenshots/embedded176.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And user clicks on Book Appointment button in popular surgery form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded177.png' src="../Screenshots/embedded177.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture mobile number in otp popup</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with correct details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded178.png' src="../Screenshots/embedded178.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="468"><span class="badge log pass-bg mr-2">Pass</span>Verify surgeries form submission with incorrect details on the Surgeries page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="469"><span class="badge log pass-bg mr-2">Pass</span>Verify surgeries form submission with incorrect details on the Surgeries page</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigates to Surgeries from home page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with incorrect details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded179.png' src="../Screenshots/embedded179.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user clicks on "Cataract" under Popular Surgeries</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with incorrect details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded180.png' src="../Screenshots/embedded180.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And enter "Sa" in name in popular surgery form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with incorrect details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded181.png' src="../Screenshots/embedded181.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And enter "98798798" in contact number in popular surgery form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with incorrect details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded182.png' src="../Screenshots/embedded182.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And select "Bangalore" in the city dropdown in popular surgery form</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with incorrect details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded183.png' src="../Screenshots/embedded183.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture error message displayed below name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with incorrect details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded184.png' src="../Screenshots/embedded184.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture error message displayed below contact number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>com.practo.stepDefinitions.Hooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>Verify surgeries form submission with incorrect details on the Surgeries page
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded185.png' src="../Screenshots/embedded185.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>17</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">17 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>17 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:19:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='63' id='76'>verify if the submit button is disabled with incorrect details on the Health and Wellness Page</a>
+<div class="">
+<span class="badge badge-default">Health and Wellness.verify if the submit button is disabled with incorrect details on the Health and Wellness Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:20:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='63' id='95'>verify if the submit button is disabled with incorrect details on the Health and Wellness Page</a>
+<div class="">
+<span class="badge badge-default">Health and Wellness.verify if the submit button is disabled with incorrect details on the Health and Wellness Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:20:18 pm</td>
+<td>
+<a href="#" class="linked" test-id='63' id='114'>verify if the submit button is disabled with incorrect details on the Health and Wellness Page</a>
+<div class="">
+<span class="badge badge-default">Health and Wellness.verify if the submit button is disabled with incorrect details on the Health and Wellness Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:20:27 pm</td>
+<td>
+<a href="#" class="linked" test-id='63' id='133'>verify if the submit button is disabled with incorrect details on the Health and Wellness Page</a>
+<div class="">
+<span class="badge badge-default">Health and Wellness.verify if the submit button is disabled with incorrect details on the Health and Wellness Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:20:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='63' id='153'>verify if submit button enabled with correct details on the Health and Wellness Plan page</a>
+<div class="">
+<span class="badge badge-default">Health and Wellness.verify if submit button enabled with correct details on the Health and Wellness Plan page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:20:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='172' id='174'>Verify navigation items on the Home Page</a>
+<div class="">
+<span class="badge badge-default">Home Page.Verify navigation items on the Home Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:20:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='172' id='183'>Verify navigation items on the Home Page</a>
+<div class="">
+<span class="badge badge-default">Home Page.Verify navigation items on the Home Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:20:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='172' id='192'>Verify navigation items on the Home Page</a>
+<div class="">
+<span class="badge badge-default">Home Page.Verify navigation items on the Home Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:21:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='172' id='201'>Verify navigation items on the Home Page</a>
+<div class="">
+<span class="badge badge-default">Home Page.Verify navigation items on the Home Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:21:09 pm</td>
+<td>
+<a href="#" class="linked" test-id='172' id='210'>Verify navigation items on the Home Page</a>
+<div class="">
+<span class="badge badge-default">Home Page.Verify navigation items on the Home Page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:22:56 pm</td>
+<td>
+<a href="#" class="linked" test-id='313' id='315'>Verify consultation form submission with correct details on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">Surgeries.Verify consultation form submission with correct details on the Surgeries page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:23:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='313' id='332'>Verify consultation form submission with correct details on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">Surgeries.Verify consultation form submission with correct details on the Surgeries page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:23:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='313' id='350'>Verify consultation form submission with wrong name on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">Surgeries.Verify consultation form submission with wrong name on the Surgeries page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:23:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='313' id='366'>Verify consultation form submission with wrong contact number on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">Surgeries.Verify consultation form submission with wrong contact number on the Surgeries page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:23:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='313' id='381'>Verify consultation form submission with wrong contact number on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">Surgeries.Verify consultation form submission with wrong contact number on the Surgeries page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:23:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='313' id='397'>Verify consultation form submission with wrong name and contact number on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">Surgeries.Verify consultation form submission with wrong name and contact number on the Surgeries page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:23:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='313' id='414'>Verify consultation form submission with wrong name and contact number on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">Surgeries.Verify consultation form submission with wrong name and contact number on the Surgeries page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>11</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">11 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>11 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:19:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>verify form submission with correct details by capturing Thank You message on the Health and Wellness page</a>
+<div class="">
+<span class="badge badge-default">End to End happy flow execution.verify form submission with correct details by capturing Thank You message on the Health and Wellness page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:21:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='219' id='221'>Filter doctors by patient stories on the Search page</a>
+<div class="">
+<span class="badge badge-default">Search.Filter doctors by patient stories on the Search page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:21:43 pm</td>
+<td>
+<a href="#" class="linked" test-id='219' id='237'>Filter doctors by fees on the Search page</a>
+<div class="">
+<span class="badge badge-default">Search.Filter doctors by fees on the Search page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:21:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='219' id='252'>Filter doctors by fees on the Search page</a>
+<div class="">
+<span class="badge badge-default">Search.Filter doctors by fees on the Search page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:22:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='219' id='268'>Filter doctors by availability on the Search page</a>
+<div class="">
+<span class="badge badge-default">Search.Filter doctors by availability on the Search page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:22:28 pm</td>
+<td>
+<a href="#" class="linked" test-id='219' id='284'>Filter doctors by video consult availability on the Search page</a>
+<div class="">
+<span class="badge badge-default">Search.Filter doctors by video consult availability on the Search page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:22:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='219' id='300'>Filter doctors location in Chennai on the Search page</a>
+<div class="">
+<span class="badge badge-default">Search.Filter doctors location in Chennai on the Search page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:23:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='313' id='432'>Verify surgeries form popup message on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">Surgeries.Verify surgeries form popup message on the Surgeries page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:23:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='313' id='441'>Verify surgeries form popup message on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">Surgeries.Verify surgeries form popup message on the Surgeries page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:23:57 pm</td>
+<td>
+<a href="#" class="linked" test-id='313' id='451'>Verify surgeries form submission with correct details on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">Surgeries.Verify surgeries form submission with correct details on the Surgeries page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:24:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='313' id='469'>Verify surgeries form submission with incorrect details on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">Surgeries.Verify surgeries form submission with incorrect details on the Surgeries page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:19:50 pm</td>
+<td>
+<a href="#" class="linked" test-id='63' id='64'>verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page</a>
+<div class="">
+<span class="badge badge-default">Health and Wellness.verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@test</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@test</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:18:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Search for doctors using the specified filters and accquire top five results</a>
+<div class="">
+<span class="badge badge-default">End to End happy flow execution.Search for doctors using the specified filters and accquire top five results</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:19:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Extract the surgeries listed as Popular Surgeries on the Surgeries page</a>
+<div class="">
+<span class="badge badge-default">End to End happy flow execution.Extract the surgeries listed as Popular Surgeries on the Surgeries page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>13:19:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='38'>verify form submission with correct details by capturing Thank You message on the Health and Wellness page</a>
+<div class="">
+<span class="badge badge-default">End to End happy flow execution.verify form submission with correct details by capturing Thank You message on the Health and Wellness page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 7, 2024 01:18:53 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 7, 2024 01:24:18 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>5</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>5</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>31</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>370</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"End to End happy flow execution":55.896,"Health and Wellness":58.131,"Home Page":26.143,"Search":101.182,"Surgeries":82.235
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@smoke</td>
+<td>17</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@regression</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@sanity</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@test</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 5,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 31,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 370,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
