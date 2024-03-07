@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="549.937" tests="31" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="346.69" tests="31" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Zulu\zulu-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\saini\AppData\Local\Temp\surefire8356432896556741008\surefirebooter-20240307160310995_3.jar C:\Users\saini\AppData\Local\Temp\surefire8356432896556741008 2024-03-07T16-03-10_570-jvmRun1 surefire-20240307160310995_1tmp surefire_0-20240307160310995_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\saini\AppData\Local\Temp\surefire17286584208912306730\surefirebooter-20240307174744781_3.jar C:\Users\saini\AppData\Local\Temp\surefire17286584208912306730 2024-03-07T17-47-44_452-jvmRun1 surefire-20240307174744781_1tmp surefire_0-20240307174744781_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="A:\projects\eclipse_workspace\FindingHospitals\target\test-classes;A:\projects\eclipse_workspace\FindingHospitals\target\classes;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\saini\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\saini\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\saini\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\saini\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\saini\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\saini\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\saini\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\saini\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\saini\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\saini\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\saini\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\saini\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\Users\saini\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\saini\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\saini\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\saini\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\saini\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\saini\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\saini\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\saini\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\saini\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\saini\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\saini\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\saini\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\saini\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\saini\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\saini\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\saini\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\saini\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\saini\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\saini\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\saini\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\saini\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.16.0\selenium-firefox-driver-4.16.0.jar;C:\Users\saini\.m2\repository\org\seleniumhq\selenium\selenium-http\4.16.0\selenium-http-4.16.0.jar;C:\Users\saini\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\saini\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\saini\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\saini\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\saini\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\saini\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\saini\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\saini\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\saini\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\saini\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\saini\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\saini\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\saini\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\saini\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\saini\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\saini\.m2\repository\io\cucumber\cucumber-java\7.15.0\cucumber-java-7.15.0.jar;C:\Users\saini\.m2\repository\io\cucumber\cucumber-core\7.15.0\cucumber-core-7.15.0.jar;C:\Users\saini\.m2\repository\io\cucumber\cucumber-gherkin\7.15.0\cucumber-gherkin-7.15.0.jar;C:\Users\saini\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.15.0\cucumber-gherkin-messages-7.15.0.jar;C:\Users\saini\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\saini\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\saini\.m2\repository\io\cucumber\tag-expressions\6.0.0\tag-expressions-6.0.0.jar;C:\Users\saini\.m2\repository\io\cucumber\cucumber-expressions\17.0.1\cucumber-expressions-17.0.1.jar;C:\Users\saini\.m2\repository\io\cucumber\datatable\7.15.0\datatable-7.15.0.jar;C:\Users\saini\.m2\repository\io\cucumber\cucumber-plugin\7.15.0\cucumber-plugin-7.15.0.jar;C:\Users\saini\.m2\repository\io\cucumber\docstring\7.15.0\docstring-7.15.0.jar;C:\Users\saini\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\saini\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\saini\.m2\repository\io\cucumber\ci-environment\10.0.0\ci-environment-10.0.0.jar;C:\Users\saini\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\saini\.m2\repository\io\cucumber\cucumber-junit\7.15.0\cucumber-junit-7.15.0.jar;C:\Users\saini\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\saini\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\saini\.m2\repository\io\cucumber\cucumber-testng\7.15.0\cucumber-testng-7.15.0.jar;C:\Users\saini\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\saini\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\saini\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\saini\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\saini\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\saini\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\saini\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\saini\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\saini\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\saini\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\saini\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\saini\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\saini\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\saini\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\saini\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\saini\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\saini\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\saini\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\saini\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\saini\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\saini\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\saini\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\saini\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\saini\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\saini\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\saini\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\saini\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\saini\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\saini\AppData\Local\Temp\surefire8356432896556741008\surefirebooter-20240307160310995_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\saini\AppData\Local\Temp\surefire17286584208912306730\surefirebooter-20240307174744781_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.10+7-LTS"/>
@@ -57,7 +57,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Search for doctors using the specified filters and accquire top five results&quot;, &quot;End to End happy flow execution&quot;](1)" classname="com.practo.testRunner.TestNGRunner" time="50.783">
+  <testcase name="runScenario[&quot;Search for doctors using the specified filters and accquire top five results&quot;, &quot;End to End happy flow execution&quot;](1)" classname="com.practo.testRunner.TestNGRunner" time="39.572">
     <system-out><![CDATA[
 @test
 Scenario Outline: Search for doctors using the specified filters and accquire top five results # FeatureFiles/endToEnd.feature:19
@@ -71,31 +71,31 @@ Scenario Outline: Search for doctors using the specified filters and accquire to
 
   And user inputs "Dentist" in search                                                          # com.practo.stepDefinitions.SearchSteps.user_inputs_in_search(java.lang.String)
 
-    Embedding Search for doctors using the specified filters and accquire top five results [image/png 336671 bytes]
+    Embedding Search for doctors using the specified filters and accquire top five results [image/png 349721 bytes]
 
   And user selects "5+ Years of experience" under Experience                                   # com.practo.stepDefinitions.SearchSteps.user_selects_under_experience(java.lang.String)
 
-    Embedding Search for doctors using the specified filters and accquire top five results [image/png 347578 bytes]
+    Embedding Search for doctors using the specified filters and accquire top five results [image/png 327494 bytes]
 
   And user clicks on All filters                                                               # com.practo.stepDefinitions.SearchSteps.user_clicks_on_all_features()
 
-    Embedding Search for doctors using the specified filters and accquire top five results [image/png 333461 bytes]
+    Embedding Search for doctors using the specified filters and accquire top five results [image/png 329418 bytes]
 
   And user selects: "Above 500" under fees                                                     # com.practo.stepDefinitions.SearchSteps.user_selects_under_fees(java.lang.String)
 
-    Embedding Search for doctors using the specified filters and accquire top five results [image/png 346428 bytes]
+    Embedding Search for doctors using the specified filters and accquire top five results [image/png 341911 bytes]
 
   And user filters by patient stories: "80+ Patient Stories"                                   # com.practo.stepDefinitions.SearchSteps.user_filters_by_patient_stories(java.lang.String)
 
-    Embedding Search for doctors using the specified filters and accquire top five results [image/png 346541 bytes]
+    Embedding Search for doctors using the specified filters and accquire top five results [image/png 344242 bytes]
 
   And user clicks on All filters                                                               # com.practo.stepDefinitions.SearchSteps.user_clicks_on_all_features()
 
-    Embedding Search for doctors using the specified filters and accquire top five results [image/png 336459 bytes]
+    Embedding Search for doctors using the specified filters and accquire top five results [image/png 340154 bytes]
 
   And user selects: "Available Tomorrow" under availability                                    # com.practo.stepDefinitions.SearchSteps.user_selects_under_availability(java.lang.String)
 
-    Embedding Search for doctors using the specified filters and accquire top five results [image/png 348997 bytes]
+    Embedding Search for doctors using the specified filters and accquire top five results [image/png 354891 bytes]
 
   And user selects "Number of patient stories - High to low" under sort                        # com.practo.stepDefinitions.SearchSteps.user_selects_under_sort(java.lang.String)
 
@@ -144,23 +144,23 @@ Doctor Fee: ₹800 Consultation fee at clinic
     <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Mar 07, 2024 4:03:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Mar 07, 2024 5:47:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Extract the surgeries listed as Popular Surgeries on the Surgeries page&quot;, &quot;End to End happy flow execution&quot;](2)" classname="com.practo.testRunner.TestNGRunner" time="16.46">
+  <testcase name="runScenario[&quot;Extract the surgeries listed as Popular Surgeries on the Surgeries page&quot;, &quot;End to End happy flow execution&quot;](2)" classname="com.practo.testRunner.TestNGRunner" time="9.549">
     <system-out><![CDATA[
 @test
 Scenario: Extract the surgeries listed as Popular Surgeries on the Surgeries page # FeatureFiles/endToEnd.feature:22
   Given user navigates to Surgeries from home page                                # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Extract the surgeries listed as Popular Surgeries on the Surgeries page [image/png 414682 bytes]
+    Embedding Extract the surgeries listed as Popular Surgeries on the Surgeries page [image/png 414706 bytes]
 
 List of Popular Surgeries extracted.
   When extract surgeries listed under Popular Surgeries                           # com.practo.stepDefinitions.SurgeriesSteps.extract_surgeries_listed_under_popular_surgeries()
 
-    Embedding Extract the surgeries listed as Popular Surgeries on the Surgeries page [image/png 414688 bytes]
+    Embedding Extract the surgeries listed as Popular Surgeries on the Surgeries page [image/png 414662 bytes]
 
 Piles
 Hernia Treatment
@@ -184,14 +184,14 @@ Hair Transplant
 Total Count of Popular Surgeries: 19
   And display them in console output                                              # com.practo.stepDefinitions.SurgeriesSteps.display_them_in_console_output()
 
-    Embedding Extract the surgeries listed as Popular Surgeries on the Surgeries page [image/png 414673 bytes]
+    Embedding Extract the surgeries listed as Popular Surgeries on the Surgeries page [image/png 414686 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:04:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:48:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;verify form submission with correct details by capturing Thank You message on the Health and Wellness page&quot;, &quot;End to End happy flow execution&quot;](3)" classname="com.practo.testRunner.TestNGRunner" time="27.031">
+  <testcase name="runScenario[&quot;verify form submission with correct details by capturing Thank You message on the Health and Wellness page&quot;, &quot;End to End happy flow execution&quot;](3)" classname="com.practo.testRunner.TestNGRunner" time="12.107">
     <system-out><![CDATA[
 @regression @test
 Scenario Outline: verify form submission with correct details by capturing Thank You message on the Health and Wellness page # FeatureFiles/endToEnd.feature:43
@@ -234,18 +234,18 @@ Schedule a demo button is disabled.
 
   And user clicks Schedule a demo button                                                                                     # com.practo.stepDefinitions.HealthAndWellnessSteps.user_clicks_schedule_a_demo_button()
 
-    Embedding verify form submission with correct details by capturing Thank You message on the Health and Wellness page [image/png 734728 bytes]
+    Embedding verify form submission with correct details by capturing Thank You message on the Health and Wellness page [image/png 624716 bytes]
 
   Then capture thank you message                                                                                             # com.practo.stepDefinitions.HealthAndWellnessSteps.capture_thank_you_message()
 
     Embedding verify form submission with correct details by capturing Thank You message on the Health and Wellness page [image/png 187227 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:04:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:48:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page&quot;, &quot;Health and Wellness&quot;](4)" classname="com.practo.testRunner.TestNGRunner" time="11.528">
+  <testcase name="runScenario[&quot;verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page&quot;, &quot;Health and Wellness&quot;](4)" classname="com.practo.testRunner.TestNGRunner" time="8.35">
     <system-out><![CDATA[
 @sanity
 Scenario: verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page # FeatureFiles/healthAndWellness.feature:4
@@ -255,7 +255,7 @@ Scenario: verify Schedule a demo scroll-to-top navigation button on the Health a
 
   When user scrolls down to the bottom of the page                                               # com.practo.stepDefinitions.HealthAndWellnessSteps.scroll_down_until_schedule_a_demo_navigation_helper_is_visible()
 
-    Embedding verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page [image/png 131422 bytes]
+    Embedding verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page [image/png 131400 bytes]
 
   And user clicks the Schedule a demo button                                                     # com.practo.stepDefinitions.HealthAndWellnessSteps.user_clicks_the_schedule_a_demo_button()
 
@@ -266,11 +266,11 @@ Scenario: verify Schedule a demo scroll-to-top navigation button on the Health a
     Embedding verify Schedule a demo scroll-to-top navigation button on the Health and Wellness Page [image/png 478245 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:04:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:48:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;verify if the submit button is disabled with incorrect details on the Health and Wellness Page&quot;, &quot;Health and Wellness&quot;](5)" classname="com.practo.testRunner.TestNGRunner" time="18.196">
+  <testcase name="runScenario[&quot;verify if the submit button is disabled with incorrect details on the Health and Wellness Page&quot;, &quot;Health and Wellness&quot;](5)" classname="com.practo.testRunner.TestNGRunner" time="9.978">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: verify if the submit button is disabled with incorrect details on the Health and Wellness Page # FeatureFiles/healthAndWellness.feature:23
@@ -308,11 +308,11 @@ Schedule a demo button is disabled.
     Embedding verify if the submit button is disabled with incorrect details on the Health and Wellness Page [image/png 623839 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:05:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:48:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;verify if the submit button is disabled with incorrect details on the Health and Wellness Page&quot;, &quot;Health and Wellness&quot;](6)" classname="com.practo.testRunner.TestNGRunner" time="17.579">
+  <testcase name="runScenario[&quot;verify if the submit button is disabled with incorrect details on the Health and Wellness Page&quot;, &quot;Health and Wellness&quot;](6)" classname="com.practo.testRunner.TestNGRunner" time="8.806">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: verify if the submit button is disabled with incorrect details on the Health and Wellness Page # FeatureFiles/healthAndWellness.feature:24
@@ -350,11 +350,11 @@ Schedule a demo button is disabled.
     Embedding verify if the submit button is disabled with incorrect details on the Health and Wellness Page [image/png 623728 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:05:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:49:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;verify if the submit button is disabled with incorrect details on the Health and Wellness Page&quot;, &quot;Health and Wellness&quot;](7)" classname="com.practo.testRunner.TestNGRunner" time="17.848">
+  <testcase name="runScenario[&quot;verify if the submit button is disabled with incorrect details on the Health and Wellness Page&quot;, &quot;Health and Wellness&quot;](7)" classname="com.practo.testRunner.TestNGRunner" time="11.267">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: verify if the submit button is disabled with incorrect details on the Health and Wellness Page # FeatureFiles/healthAndWellness.feature:25
@@ -380,7 +380,7 @@ Scenario Outline: verify if the submit button is disabled with incorrect details
 
   And user selects Organization size: ""                                                                         # com.practo.stepDefinitions.HealthAndWellnessSteps.user_selects_organization_size(java.lang.String)
 
-    Embedding verify if the submit button is disabled with incorrect details on the Health and Wellness Page [image/png 624827 bytes]
+    Embedding verify if the submit button is disabled with incorrect details on the Health and Wellness Page [image/png 624858 bytes]
 
   And user selects "Taking a demo" in Interested in                                                              # com.practo.stepDefinitions.HealthAndWellnessSteps.user_selects_in_interested_in(java.lang.String)
 
@@ -392,11 +392,11 @@ Schedule a demo button is disabled.
     Embedding verify if the submit button is disabled with incorrect details on the Health and Wellness Page [image/png 625298 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:05:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:49:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;verify if the submit button is disabled with incorrect details on the Health and Wellness Page&quot;, &quot;Health and Wellness&quot;](8)" classname="com.practo.testRunner.TestNGRunner" time="17.835">
+  <testcase name="runScenario[&quot;verify if the submit button is disabled with incorrect details on the Health and Wellness Page&quot;, &quot;Health and Wellness&quot;](8)" classname="com.practo.testRunner.TestNGRunner" time="10.239">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: verify if the submit button is disabled with incorrect details on the Health and Wellness Page # FeatureFiles/healthAndWellness.feature:26
@@ -434,11 +434,11 @@ Schedule a demo button is disabled.
     Embedding verify if the submit button is disabled with incorrect details on the Health and Wellness Page [image/png 624000 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:05:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:49:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;verify if submit button enabled with correct details on the Health and Wellness Plan page&quot;, &quot;Health and Wellness&quot;](9)" classname="com.practo.testRunner.TestNGRunner" time="17.715">
+  <testcase name="runScenario[&quot;verify if submit button enabled with correct details on the Health and Wellness Plan page&quot;, &quot;Health and Wellness&quot;](9)" classname="com.practo.testRunner.TestNGRunner" time="10.857">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: verify if submit button enabled with correct details on the Health and Wellness Plan page # FeatureFiles/healthAndWellness.feature:41
@@ -476,11 +476,11 @@ Schedule a demo button is enabled.
     Embedding verify if submit button enabled with correct details on the Health and Wellness Plan page [image/png 624733 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:06:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:49:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify navigation items on the Home Page&quot;, &quot;Home Page&quot;](10)" classname="com.practo.testRunner.TestNGRunner" time="9.271">
+  <testcase name="runScenario[&quot;Verify navigation items on the Home Page&quot;, &quot;Home Page&quot;](10)" classname="com.practo.testRunner.TestNGRunner" time="5.082">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify navigation items on the Home Page                                                     # FeatureFiles/homePage.feature:11
@@ -498,11 +498,11 @@ Practo is open
     Embedding Verify navigation items on the Home Page [image/png 204800 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:06:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:49:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify navigation items on the Home Page&quot;, &quot;Home Page&quot;](11)" classname="com.practo.testRunner.TestNGRunner" time="8.218">
+  <testcase name="runScenario[&quot;Verify navigation items on the Home Page&quot;, &quot;Home Page&quot;](11)" classname="com.practo.testRunner.TestNGRunner" time="4.129">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify navigation items on the Home Page                                    # FeatureFiles/homePage.feature:12
@@ -513,18 +513,18 @@ Practo is open
 
   When user clicks on "Video Consult"                                                         # com.practo.stepDefinitions.HomePageSteps.user_clicks_on(java.lang.String)
 
-    Embedding Verify navigation items on the Home Page [image/png 396680 bytes]
+    Embedding Verify navigation items on the Home Page [image/png 395882 bytes]
 
   Then verify page title "Online Doctor Consultation | Ask Top Doctor's Advice 24*7 | Practo" # com.practo.stepDefinitions.HomePageSteps.verify_page_title(java.lang.String)
 
-    Embedding Verify navigation items on the Home Page [image/png 396062 bytes]
+    Embedding Verify navigation items on the Home Page [image/png 395943 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:06:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:49:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify navigation items on the Home Page&quot;, &quot;Home Page&quot;](12)" classname="com.practo.testRunner.TestNGRunner" time="10.322">
+  <testcase name="runScenario[&quot;Verify navigation items on the Home Page&quot;, &quot;Home Page&quot;](12)" classname="com.practo.testRunner.TestNGRunner" time="5.298">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify navigation items on the Home Page                                                            # FeatureFiles/homePage.feature:13
@@ -535,18 +535,18 @@ Practo is open
 
   When user clicks on "Medicines"                                                                                     # com.practo.stepDefinitions.HomePageSteps.user_clicks_on(java.lang.String)
 
-    Embedding Verify navigation items on the Home Page [image/png 359437 bytes]
+    Embedding Verify navigation items on the Home Page [image/png 359426 bytes]
 
   Then verify page title "Buy Medicines,Health Products Online | India's Most Reliable Online Medical Store | Practo" # com.practo.stepDefinitions.HomePageSteps.verify_page_title(java.lang.String)
 
-    Embedding Verify navigation items on the Home Page [image/png 362219 bytes]
+    Embedding Verify navigation items on the Home Page [image/png 362209 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:06:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:49:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify navigation items on the Home Page&quot;, &quot;Home Page&quot;](13)" classname="com.practo.testRunner.TestNGRunner" time="8.849">
+  <testcase name="runScenario[&quot;Verify navigation items on the Home Page&quot;, &quot;Home Page&quot;](13)" classname="com.practo.testRunner.TestNGRunner" time="4.305">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify navigation items on the Home Page                                        # FeatureFiles/homePage.feature:14
@@ -557,18 +557,18 @@ Practo is open
 
   When user clicks on "Surgeries"                                                                 # com.practo.stepDefinitions.HomePageSteps.user_clicks_on(java.lang.String)
 
-    Embedding Verify navigation items on the Home Page [image/png 414668 bytes]
+    Embedding Verify navigation items on the Home Page [image/png 359835 bytes]
 
   Then verify page title "Practo Care Surgeries | End to end care from top surgeons in your city" # com.practo.stepDefinitions.HomePageSteps.verify_page_title(java.lang.String)
 
-    Embedding Verify navigation items on the Home Page [image/png 414672 bytes]
+    Embedding Verify navigation items on the Home Page [image/png 414706 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:07:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:50:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify navigation items on the Home Page&quot;, &quot;Home Page&quot;](14)" classname="com.practo.testRunner.TestNGRunner" time="9.625">
+  <testcase name="runScenario[&quot;Verify navigation items on the Home Page&quot;, &quot;Home Page&quot;](14)" classname="com.practo.testRunner.TestNGRunner" time="5.133">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify navigation items on the Home Page                                       # FeatureFiles/homePage.feature:15
@@ -586,11 +586,11 @@ Practo is open
     Embedding Verify navigation items on the Home Page [image/png 106255 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:07:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:50:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Filter doctors by patient stories on the Search page&quot;, &quot;Search&quot;](15)" classname="com.practo.testRunner.TestNGRunner" time="30.598">
+  <testcase name="runScenario[&quot;Filter doctors by patient stories on the Search page&quot;, &quot;Search&quot;](15)" classname="com.practo.testRunner.TestNGRunner" time="23.866">
     <system-out><![CDATA[
 @regression
 Scenario Outline: Filter doctors by patient stories on the Search page # FeatureFiles/search.feature:14
@@ -604,26 +604,26 @@ Scenario Outline: Filter doctors by patient stories on the Search page # Feature
 
   And user inputs "Dentist" in search                                  # com.practo.stepDefinitions.SearchSteps.user_inputs_in_search(java.lang.String)
 
-    Embedding Filter doctors by patient stories on the Search page [image/png 326812 bytes]
+    Embedding Filter doctors by patient stories on the Search page [image/png 329318 bytes]
 
   And fetch the number of doctors displayed                            # com.practo.stepDefinitions.SearchSteps.fetch_the_number_of_doctors_displayed()
 
-    Embedding Filter doctors by patient stories on the Search page [image/png 326812 bytes]
+    Embedding Filter doctors by patient stories on the Search page [image/png 326256 bytes]
 
   And user filters by patient stories: "80+ Patient Stories"           # com.practo.stepDefinitions.SearchSteps.user_filters_by_patient_stories(java.lang.String)
 
-    Embedding Filter doctors by patient stories on the Search page [image/png 340292 bytes]
+    Embedding Filter doctors by patient stories on the Search page [image/png 325730 bytes]
 
   Then verify the number of doctors is changed                         # com.practo.stepDefinitions.SearchSteps.verify_the_number_of_doctors_is_changed()
 
-    Embedding Filter doctors by patient stories on the Search page [image/png 345784 bytes]
+    Embedding Filter doctors by patient stories on the Search page [image/png 325730 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:07:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:50:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Filter doctors by fees on the Search page&quot;, &quot;Search&quot;](16)" classname="com.practo.testRunner.TestNGRunner" time="21.763">
+  <testcase name="runScenario[&quot;Filter doctors by fees on the Search page&quot;, &quot;Search&quot;](16)" classname="com.practo.testRunner.TestNGRunner" time="14.89">
     <system-out><![CDATA[
 @regression
 Scenario Outline: Filter doctors by fees on the Search page                # FeatureFiles/search.feature:27
@@ -637,26 +637,26 @@ Scenario Outline: Filter doctors by fees on the Search page                # Fea
 
   And user inputs "Dentist" in search                                      # com.practo.stepDefinitions.SearchSteps.user_inputs_in_search(java.lang.String)
 
-    Embedding Filter doctors by fees on the Search page [image/png 336671 bytes]
+    Embedding Filter doctors by fees on the Search page [image/png 325710 bytes]
 
   And user clicks on All filters                                           # com.practo.stepDefinitions.SearchSteps.user_clicks_on_all_features()
 
-    Embedding Filter doctors by fees on the Search page [image/png 331727 bytes]
+    Embedding Filter doctors by fees on the Search page [image/png 312654 bytes]
 
   And user selects: "0-500" under fees                                     # com.practo.stepDefinitions.SearchSteps.user_selects_under_fees(java.lang.String)
 
-    Embedding Filter doctors by fees on the Search page [image/png 348141 bytes]
+    Embedding Filter doctors by fees on the Search page [image/png 341815 bytes]
 
   Then verify if the listed doctors have the right fee requirement "0-500" # com.practo.stepDefinitions.SearchSteps.verify_if_the_listed_doctors_have_the_right_fee_requirement(java.lang.String)
 
     Embedding Filter doctors by fees on the Search page [image/png 341815 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:07:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:50:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Filter doctors by fees on the Search page&quot;, &quot;Search&quot;](17)" classname="com.practo.testRunner.TestNGRunner" time="22.345">
+  <testcase name="runScenario[&quot;Filter doctors by fees on the Search page&quot;, &quot;Search&quot;](17)" classname="com.practo.testRunner.TestNGRunner" time="14.527">
     <system-out><![CDATA[
 @regression
 Scenario Outline: Filter doctors by fees on the Search page                    # FeatureFiles/search.feature:28
@@ -670,26 +670,26 @@ Scenario Outline: Filter doctors by fees on the Search page                    #
 
   And user inputs "Dentist" in search                                          # com.practo.stepDefinitions.SearchSteps.user_inputs_in_search(java.lang.String)
 
-    Embedding Filter doctors by fees on the Search page [image/png 326191 bytes]
+    Embedding Filter doctors by fees on the Search page [image/png 323028 bytes]
 
   And user clicks on All filters                                               # com.practo.stepDefinitions.SearchSteps.user_clicks_on_all_features()
 
-    Embedding Filter doctors by fees on the Search page [image/png 313095 bytes]
+    Embedding Filter doctors by fees on the Search page [image/png 316686 bytes]
 
   And user selects: "Above 500" under fees                                     # com.practo.stepDefinitions.SearchSteps.user_selects_under_fees(java.lang.String)
 
-    Embedding Filter doctors by fees on the Search page [image/png 338792 bytes]
+    Embedding Filter doctors by fees on the Search page [image/png 349578 bytes]
 
   Then verify if the listed doctors have the right fee requirement "Above 500" # com.practo.stepDefinitions.SearchSteps.verify_if_the_listed_doctors_have_the_right_fee_requirement(java.lang.String)
 
-    Embedding Filter doctors by fees on the Search page [image/png 345789 bytes]
+    Embedding Filter doctors by fees on the Search page [image/png 349578 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:08:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:50:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Filter doctors by availability on the Search page&quot;, &quot;Search&quot;](18)" classname="com.practo.testRunner.TestNGRunner" time="21.602">
+  <testcase name="runScenario[&quot;Filter doctors by availability on the Search page&quot;, &quot;Search&quot;](18)" classname="com.practo.testRunner.TestNGRunner" time="48.85">
     <system-out><![CDATA[
 @regression
 Scenario Outline: Filter doctors by availability on the Search page                              # FeatureFiles/search.feature:41
@@ -703,26 +703,26 @@ Scenario Outline: Filter doctors by availability on the Search page             
 
   And user inputs "Dentist" in search                                                            # com.practo.stepDefinitions.SearchSteps.user_inputs_in_search(java.lang.String)
 
-    Embedding Filter doctors by availability on the Search page [image/png 349644 bytes]
+    Embedding Filter doctors by availability on the Search page [image/png 371654 bytes]
 
   And user clicks on All filters                                                                 # com.practo.stepDefinitions.SearchSteps.user_clicks_on_all_features()
 
-    Embedding Filter doctors by availability on the Search page [image/png 331542 bytes]
+    Embedding Filter doctors by availability on the Search page [image/png 359355 bytes]
 
   And user selects: "Available Tomorrow" under availability                                      # com.practo.stepDefinitions.SearchSteps.user_selects_under_availability(java.lang.String)
 
-    Embedding Filter doctors by availability on the Search page [image/png 351293 bytes]
+    Embedding Filter doctors by availability on the Search page [image/png 342473 bytes]
 
   Then verify if the availability displayed above book clinic visit matches "Available Tomorrow" # com.practo.stepDefinitions.SearchSteps.verify_if_the_availability_displayed_above_book_clinic_visit_matches(java.lang.String)
 
-    Embedding Filter doctors by availability on the Search page [image/png 342782 bytes]
+    Embedding Filter doctors by availability on the Search page [image/png 342473 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:08:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:51:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Filter doctors by video consult availability on the Search page&quot;, &quot;Search&quot;](19)" classname="com.practo.testRunner.TestNGRunner" time="21.247">
+  <testcase name="runScenario[&quot;Filter doctors by video consult availability on the Search page&quot;, &quot;Search&quot;](19)" classname="com.practo.testRunner.TestNGRunner" time="14.002">
     <system-out><![CDATA[
 @regression
 Scenario Outline: Filter doctors by video consult availability on the Search page # FeatureFiles/search.feature:54
@@ -732,30 +732,30 @@ Scenario Outline: Filter doctors by video consult availability on the Search pag
 
   When user selects location as "Chennai"                                         # com.practo.stepDefinitions.SearchSteps.user_selects_location_as(java.lang.String)
 
-    Embedding Filter doctors by video consult availability on the Search page [image/png 192360 bytes]
+    Embedding Filter doctors by video consult availability on the Search page [image/png 188656 bytes]
 
   And user inputs "Dentist" in search                                             # com.practo.stepDefinitions.SearchSteps.user_inputs_in_search(java.lang.String)
 
-    Embedding Filter doctors by video consult availability on the Search page [image/png 326855 bytes]
+    Embedding Filter doctors by video consult availability on the Search page [image/png 492120 bytes]
 
   And user clicks on All filters                                                  # com.practo.stepDefinitions.SearchSteps.user_clicks_on_all_features()
 
-    Embedding Filter doctors by video consult availability on the Search page [image/png 313114 bytes]
+    Embedding Filter doctors by video consult availability on the Search page [image/png 430982 bytes]
 
   And user selects "Video Consult" under Consult type                             # com.practo.stepDefinitions.SearchSteps.user_selects_under_consult_type(java.lang.String)
 
-    Embedding Filter doctors by video consult availability on the Search page [image/png 313355 bytes]
+    Embedding Filter doctors by video consult availability on the Search page [image/png 372213 bytes]
 
   Then verify if results displayed are of video consult                           # com.practo.stepDefinitions.SearchSteps.verify_if_results_displayed_are_of_video_consult()
 
-    Embedding Filter doctors by video consult availability on the Search page [image/png 313355 bytes]
+    Embedding Filter doctors by video consult availability on the Search page [image/png 242606 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:08:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:51:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Filter doctors location in Chennai on the Search page&quot;, &quot;Search&quot;](20)" classname="com.practo.testRunner.TestNGRunner" time="19.715">
+  <testcase name="runScenario[&quot;Filter doctors location in Chennai on the Search page&quot;, &quot;Search&quot;](20)" classname="com.practo.testRunner.TestNGRunner" time="12.722">
     <system-out><![CDATA[
 @regression
 Scenario Outline: Filter doctors location in Chennai on the Search page                               # FeatureFiles/search.feature:66
@@ -769,381 +769,381 @@ Scenario Outline: Filter doctors location in Chennai on the Search page         
 
   And user inputs "Dentist" in search                                                                 # com.practo.stepDefinitions.SearchSteps.user_inputs_in_search(java.lang.String)
 
-    Embedding Filter doctors location in Chennai on the Search page [image/png 336671 bytes]
+    Embedding Filter doctors location in Chennai on the Search page [image/png 345256 bytes]
 
   And user clicks "Anna Nagar" under location                                                         # com.practo.stepDefinitions.SearchSteps.user_clicks_anna_nagar_under_location(java.lang.String)
 
-    Embedding Filter doctors location in Chennai on the Search page [image/png 362837 bytes]
+    Embedding Filter doctors location in Chennai on the Search page [image/png 347295 bytes]
 
   Then verify if the area is selected: "You are seeing results from anna nagar. See results near you" # com.practo.stepDefinitions.SearchSteps.verify_if_the_area_is_selected(java.lang.String)
 
-    Embedding Filter doctors location in Chennai on the Search page [image/png 356938 bytes]
+    Embedding Filter doctors location in Chennai on the Search page [image/png 354184 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:09:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:52:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify consultation form submission with correct details on the Surgeries page&quot;, &quot;Surgeries&quot;](21)" classname="com.practo.testRunner.TestNGRunner" time="15.798">
+  <testcase name="runScenario[&quot;Verify consultation form submission with correct details on the Surgeries page&quot;, &quot;Surgeries&quot;](21)" classname="com.practo.testRunner.TestNGRunner" time="8.404">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify consultation form submission with correct details on the Surgeries page # FeatureFiles/surgeries.feature:15
   Given user navigates to Surgeries from home page                                               # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 414714 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 414677 bytes]
 
   When user selects "Bangalore" from the city dropdown on surgeries                              # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_city_dropdown_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 414704 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 414675 bytes]
 
   And user selects "Carpal Tunnel Syndrome" from the ailment dropdown                            # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_ailment_dropdown(java.lang.String)
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 305766 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 415666 bytes]
 
   And user inputs "Sai" in name on surgeries                                                     # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_name_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 415382 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 415356 bytes]
 
   And user inputs "9879879877" in Contact Number on surgeries                                    # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_contact_number_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 415335 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 415342 bytes]
 
   And click Book Appointment button                                                              # com.practo.stepDefinitions.SurgeriesSteps.click_book_appointment_button()
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 255474 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 269397 bytes]
 
   Then capture mobile number in otp popup                                                        # com.practo.stepDefinitions.SurgeriesSteps.capture_mobile_number_in_otp_popup()
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 266869 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 267783 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:09:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:52:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify consultation form submission with correct details on the Surgeries page&quot;, &quot;Surgeries&quot;](22)" classname="com.practo.testRunner.TestNGRunner" time="15.348">
+  <testcase name="runScenario[&quot;Verify consultation form submission with correct details on the Surgeries page&quot;, &quot;Surgeries&quot;](22)" classname="com.practo.testRunner.TestNGRunner" time="8.234">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify consultation form submission with correct details on the Surgeries page # FeatureFiles/surgeries.feature:16
   Given user navigates to Surgeries from home page                                               # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 414682 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 414713 bytes]
 
   When user selects "Chennai" from the city dropdown on surgeries                                # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_city_dropdown_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 414054 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 414059 bytes]
 
   And user selects "ACL Repair" from the ailment dropdown                                        # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_ailment_dropdown(java.lang.String)
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 304473 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 413660 bytes]
 
   And user inputs "Nivas" in name on surgeries                                                   # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_name_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 413860 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 413854 bytes]
 
   And user inputs "9879879877" in Contact Number on surgeries                                    # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_contact_number_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 413634 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 413654 bytes]
 
   And click Book Appointment button                                                              # com.practo.stepDefinitions.SurgeriesSteps.click_book_appointment_button()
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 255037 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 266858 bytes]
 
   Then capture mobile number in otp popup                                                        # com.practo.stepDefinitions.SurgeriesSteps.capture_mobile_number_in_otp_popup()
 
-    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 266222 bytes]
+    Embedding Verify consultation form submission with correct details on the Surgeries page [image/png 267198 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:09:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:52:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify consultation form submission with wrong name on the Surgeries page&quot;, &quot;Surgeries&quot;](23)" classname="com.practo.testRunner.TestNGRunner" time="14.587">
+  <testcase name="runScenario[&quot;Verify consultation form submission with wrong name on the Surgeries page&quot;, &quot;Surgeries&quot;](23)" classname="com.practo.testRunner.TestNGRunner" time="5.771">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify consultation form submission with wrong name on the Surgeries page # FeatureFiles/surgeries.feature:29
   Given user navigates to Surgeries from home page                                          # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 414673 bytes]
+    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 414686 bytes]
 
   When user selects "Chennai" from the city dropdown on surgeries                           # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_city_dropdown_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 414057 bytes]
+    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 414028 bytes]
 
   And user selects "ACL Repair" from the ailment dropdown                                   # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_ailment_dropdown(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 303606 bytes]
+    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 413696 bytes]
 
   And user inputs "Ni" in name on surgeries                                                 # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_name_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 413764 bytes]
+    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 413800 bytes]
 
   And user inputs "8123123123" in Contact Number on surgeries                               # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_contact_number_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 413916 bytes]
+    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 413920 bytes]
 
   Then capture error message displayed below name                                           # com.practo.stepDefinitions.SurgeriesSteps.capture_error_message_displayed_below_name()
 
-    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 413889 bytes]
+    Embedding Verify consultation form submission with wrong name on the Surgeries page [image/png 413930 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:10:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:52:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify consultation form submission with wrong contact number on the Surgeries page&quot;, &quot;Surgeries&quot;](24)" classname="com.practo.testRunner.TestNGRunner" time="13.941">
+  <testcase name="runScenario[&quot;Verify consultation form submission with wrong contact number on the Surgeries page&quot;, &quot;Surgeries&quot;](24)" classname="com.practo.testRunner.TestNGRunner" time="5.996">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify consultation form submission with wrong contact number on the Surgeries page # FeatureFiles/surgeries.feature:42
   Given user navigates to Surgeries from home page                                                    # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 414675 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 414703 bytes]
 
   When user selects "Bangalore" from the city dropdown on surgeries                                   # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_city_dropdown_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 374508 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 381407 bytes]
 
   And user selects "Carpal Tunnel Syndrome" from the ailment dropdown                                 # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_ailment_dropdown(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 305169 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 415678 bytes]
 
   And user inputs "Sai" in name on surgeries                                                          # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_name_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 415406 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 415391 bytes]
 
   And user inputs "1231231231" in Contact Number on surgeries                                         # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_contact_number_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 416259 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 416271 bytes]
 
   Then capture error message displayed below contact number                                           # com.practo.stepDefinitions.SurgeriesSteps.capture_error_message_displayed_below_contact_number()
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 416210 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 416295 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:10:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:52:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify consultation form submission with wrong contact number on the Surgeries page&quot;, &quot;Surgeries&quot;](25)" classname="com.practo.testRunner.TestNGRunner" time="13.686">
+  <testcase name="runScenario[&quot;Verify consultation form submission with wrong contact number on the Surgeries page&quot;, &quot;Surgeries&quot;](25)" classname="com.practo.testRunner.TestNGRunner" time="5.498">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify consultation form submission with wrong contact number on the Surgeries page # FeatureFiles/surgeries.feature:43
   Given user navigates to Surgeries from home page                                                    # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 414675 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 414709 bytes]
 
   When user selects "Chennai" from the city dropdown on surgeries                                     # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_city_dropdown_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 381448 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 414088 bytes]
 
   And user selects "Carpal Tunnel Syndrome" from the ailment dropdown                                 # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_ailment_dropdown(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 306138 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 415103 bytes]
 
   And user inputs "Nivas" in name on surgeries                                                        # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_name_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 415231 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 415253 bytes]
 
   And user inputs "898989898" in Contact Number on surgeries                                          # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_contact_number_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 415978 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 415948 bytes]
 
   Then capture error message displayed below contact number                                           # com.practo.stepDefinitions.SurgeriesSteps.capture_error_message_displayed_below_contact_number()
 
-    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 415886 bytes]
+    Embedding Verify consultation form submission with wrong contact number on the Surgeries page [image/png 415938 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:10:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:52:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify consultation form submission with wrong name and contact number on the Surgeries page&quot;, &quot;Surgeries&quot;](26)" classname="com.practo.testRunner.TestNGRunner" time="14.583">
+  <testcase name="runScenario[&quot;Verify consultation form submission with wrong name and contact number on the Surgeries page&quot;, &quot;Surgeries&quot;](26)" classname="com.practo.testRunner.TestNGRunner" time="7.441">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify consultation form submission with wrong name and contact number on the Surgeries page # FeatureFiles/surgeries.feature:57
   Given user navigates to Surgeries from home page                                                             # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 414687 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 414682 bytes]
 
   When user selects "Bangalore" from the city dropdown on surgeries                                            # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_city_dropdown_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 377359 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 414680 bytes]
 
   And user selects "Carpal Tunnel Syndrome" from the ailment dropdown                                          # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_ailment_dropdown(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 304340 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 415689 bytes]
 
   And user inputs "Sa" in name on surgeries                                                                    # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_name_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 416084 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 416082 bytes]
 
   And user inputs "1231231231" in Contact Number on surgeries                                                  # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_contact_number_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 416995 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 416989 bytes]
 
   Then capture error message displayed below name                                                              # com.practo.stepDefinitions.SurgeriesSteps.capture_error_message_displayed_below_name()
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 416971 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 417020 bytes]
 
   Then capture error message displayed below contact number                                                    # com.practo.stepDefinitions.SurgeriesSteps.capture_error_message_displayed_below_contact_number()
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 416952 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 417008 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:10:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:52:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify consultation form submission with wrong name and contact number on the Surgeries page&quot;, &quot;Surgeries&quot;](27)" classname="com.practo.testRunner.TestNGRunner" time="25.229">
+  <testcase name="runScenario[&quot;Verify consultation form submission with wrong name and contact number on the Surgeries page&quot;, &quot;Surgeries&quot;](27)" classname="com.practo.testRunner.TestNGRunner" time="6.11">
     <system-out><![CDATA[
 @smoke
 Scenario Outline: Verify consultation form submission with wrong name and contact number on the Surgeries page # FeatureFiles/surgeries.feature:58
   Given user navigates to Surgeries from home page                                                             # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 414703 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 414673 bytes]
 
   When user selects "Chennai" from the city dropdown on surgeries                                              # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_city_dropdown_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 358040 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 414045 bytes]
 
   And user selects "Carpal Tunnel Syndrome" from the ailment dropdown                                          # com.practo.stepDefinitions.SurgeriesSteps.user_selects_from_the_ailment_dropdown(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 305526 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 415061 bytes]
 
   And user inputs "Ni" in name on surgeries                                                                    # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_name_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 414517 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 415164 bytes]
 
   And user inputs "898989898" in Contact Number on surgeries                                                   # com.practo.stepDefinitions.SurgeriesSteps.user_inputs_in_contact_number_on_surgeries(java.lang.String)
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 415272 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 415899 bytes]
 
   Then capture error message displayed below name                                                              # com.practo.stepDefinitions.SurgeriesSteps.capture_error_message_displayed_below_name()
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 415270 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 415894 bytes]
 
   Then capture error message displayed below contact number                                                    # com.practo.stepDefinitions.SurgeriesSteps.capture_error_message_displayed_below_contact_number()
 
-    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 415272 bytes]
+    Embedding Verify consultation form submission with wrong name and contact number on the Surgeries page [image/png 415855 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:11:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:53:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify surgeries form popup message on the Surgeries page&quot;, &quot;Surgeries&quot;](28)" classname="com.practo.testRunner.TestNGRunner" time="10.564">
+  <testcase name="runScenario[&quot;Verify surgeries form popup message on the Surgeries page&quot;, &quot;Surgeries&quot;](28)" classname="com.practo.testRunner.TestNGRunner" time="4.151">
     <system-out><![CDATA[
 @regression
 Scenario Outline: Verify surgeries form popup message on the Surgeries page    # FeatureFiles/surgeries.feature:68
   Given user navigates to Surgeries from home page                             # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Verify surgeries form popup message on the Surgeries page [image/png 414696 bytes]
+    Embedding Verify surgeries form popup message on the Surgeries page [image/png 414668 bytes]
 
   When user clicks on "Cataract" under Popular Surgeries                       # com.practo.stepDefinitions.SurgeriesSteps.user_clicks_on_under_popular_surgeries(java.lang.String)
 
-    Embedding Verify surgeries form popup message on the Surgeries page [image/png 385763 bytes]
+    Embedding Verify surgeries form popup message on the Surgeries page [image/png 390513 bytes]
 
   Then verify the message displayed above the surgery form contains "Cataract" # com.practo.stepDefinitions.SurgeriesSteps.verify_the_message_displayed_above_the_surgery_form_contains(java.lang.String)
 
-    Embedding Verify surgeries form popup message on the Surgeries page [image/png 332070 bytes]
+    Embedding Verify surgeries form popup message on the Surgeries page [image/png 332040 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:11:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:53:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify surgeries form popup message on the Surgeries page&quot;, &quot;Surgeries&quot;](29)" classname="com.practo.testRunner.TestNGRunner" time="10.833">
+  <testcase name="runScenario[&quot;Verify surgeries form popup message on the Surgeries page&quot;, &quot;Surgeries&quot;](29)" classname="com.practo.testRunner.TestNGRunner" time="4.499">
     <system-out><![CDATA[
 @regression
 Scenario Outline: Verify surgeries form popup message on the Surgeries page        # FeatureFiles/surgeries.feature:69
   Given user navigates to Surgeries from home page                                 # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Verify surgeries form popup message on the Surgeries page [image/png 414668 bytes]
+    Embedding Verify surgeries form popup message on the Surgeries page [image/png 414709 bytes]
 
   When user clicks on "Kidney Stone" under Popular Surgeries                       # com.practo.stepDefinitions.SurgeriesSteps.user_clicks_on_under_popular_surgeries(java.lang.String)
 
-    Embedding Verify surgeries form popup message on the Surgeries page [image/png 382308 bytes]
+    Embedding Verify surgeries form popup message on the Surgeries page [image/png 390746 bytes]
 
   Then verify the message displayed above the surgery form contains "Kidney Stone" # com.practo.stepDefinitions.SurgeriesSteps.verify_the_message_displayed_above_the_surgery_form_contains(java.lang.String)
 
-    Embedding Verify surgeries form popup message on the Surgeries page [image/png 332422 bytes]
+    Embedding Verify surgeries form popup message on the Surgeries page [image/png 332375 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:11:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:53:14 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify surgeries form submission with correct details on the Surgeries page&quot;, &quot;Surgeries&quot;](30)" classname="com.practo.testRunner.TestNGRunner" time="15.196">
+  <testcase name="runScenario[&quot;Verify surgeries form submission with correct details on the Surgeries page&quot;, &quot;Surgeries&quot;](30)" classname="com.practo.testRunner.TestNGRunner" time="6.513">
     <system-out><![CDATA[
 @regression
 Scenario Outline: Verify surgeries form submission with correct details on the Surgeries page # FeatureFiles/surgeries.feature:83
   Given user navigates to Surgeries from home page                                            # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 414687 bytes]
+    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 414676 bytes]
 
   When user clicks on "Cataract" under Popular Surgeries                                      # com.practo.stepDefinitions.SurgeriesSteps.user_clicks_on_under_popular_surgeries(java.lang.String)
 
-    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 350984 bytes]
+    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 388205 bytes]
 
   And enter "Sai" in name in popular surgery form                                             # com.practo.stepDefinitions.SurgeriesSteps.enter_in_name_in_popular_surgery_form(java.lang.String)
 
-    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 331886 bytes]
+    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 331880 bytes]
 
   And enter "9879879877" in contact number in popular surgery form                            # com.practo.stepDefinitions.SurgeriesSteps.enter_in_contact_number_in_popular_surgery_form(java.lang.String)
 
-    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 331804 bytes]
+    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 331849 bytes]
 
   And select "Bangalore" in the city dropdown in popular surgery form                         # com.practo.stepDefinitions.SurgeriesSteps.select_in_the_city_dropdown_in_popular_surgery_form(java.lang.String)
 
-    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 319469 bytes]
+    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 332494 bytes]
 
   And user clicks on Book Appointment button in popular surgery form                          # com.practo.stepDefinitions.SurgeriesSteps.user_clicks_on_book_appointment_button_in_popular_surgery_form()
 
-    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 180493 bytes]
+    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 195774 bytes]
 
   Then capture mobile number in otp popup                                                     # com.practo.stepDefinitions.SurgeriesSteps.capture_mobile_number_in_otp_popup()
 
-    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 236213 bytes]
+    Embedding Verify surgeries form submission with correct details on the Surgeries page [image/png 232049 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:11:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:53:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Verify surgeries form submission with incorrect details on the Surgeries page&quot;, &quot;Surgeries&quot;](31)" classname="com.practo.testRunner.TestNGRunner" time="14.266">
+  <testcase name="runScenario[&quot;Verify surgeries form submission with incorrect details on the Surgeries page&quot;, &quot;Surgeries&quot;](31)" classname="com.practo.testRunner.TestNGRunner" time="6.133">
     <system-out><![CDATA[
 @regression
 Scenario Outline: Verify surgeries form submission with incorrect details on the Surgeries page # FeatureFiles/surgeries.feature:97
   Given user navigates to Surgeries from home page                                              # com.practo.stepDefinitions.SurgeriesSteps.user_navigates_to_surgeries_from_home_page()
 
-    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 414682 bytes]
+    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 414736 bytes]
 
   When user clicks on "Cataract" under Popular Surgeries                                        # com.practo.stepDefinitions.SurgeriesSteps.user_clicks_on_under_popular_surgeries(java.lang.String)
 
-    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 371719 bytes]
+    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 389798 bytes]
 
   And enter "Sa" in name in popular surgery form                                                # com.practo.stepDefinitions.SurgeriesSteps.enter_in_name_in_popular_surgery_form(java.lang.String)
 
-    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 332611 bytes]
+    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 332658 bytes]
 
   And enter "98798798" in contact number in popular surgery form                                # com.practo.stepDefinitions.SurgeriesSteps.enter_in_contact_number_in_popular_surgery_form(java.lang.String)
 
-    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 333267 bytes]
+    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 333292 bytes]
 
   And select "Bangalore" in the city dropdown in popular surgery form                           # com.practo.stepDefinitions.SurgeriesSteps.select_in_the_city_dropdown_in_popular_surgery_form(java.lang.String)
 
-    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 333732 bytes]
+    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 333964 bytes]
 
   Then capture error message displayed below name                                               # com.practo.stepDefinitions.SurgeriesSteps.capture_error_message_displayed_below_name()
 
-    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 333720 bytes]
+    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 333963 bytes]
 
   Then capture error message displayed below contact number                                     # com.practo.stepDefinitions.SurgeriesSteps.capture_error_message_displayed_below_contact_number()
 
-    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 333716 bytes]
+    Embedding Verify surgeries form submission with incorrect details on the Surgeries page [image/png 333979 bytes]
 
 ]]></system-out>
-    <system-err><![CDATA[Mar 07, 2024 4:12:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Mar 07, 2024 5:53:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 122, returning the closest version; found: 119; Please update to a Selenium version that supports CDP version 122
 ]]></system-err>
   </testcase>

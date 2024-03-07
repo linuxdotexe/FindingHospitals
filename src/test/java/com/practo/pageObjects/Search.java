@@ -6,13 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import com.practo.utils.ExcelUtils;
 
 public class Search extends BasePage {
@@ -22,7 +23,10 @@ public class Search extends BasePage {
 	}
 
 	JavascriptExecutor js = (JavascriptExecutor) driver;
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+		    .withTimeout(Duration.ofSeconds(60))
+		    .pollingEvery(Duration.ofSeconds(5))
+		    .ignoring(NoSuchElementException.class, StaleElementReferenceException.class);
 
 	@FindBy(xpath = "//input[@data-qa-id='omni-searchbox-keyword']")
 	WebElement inputSpecialist;
@@ -66,17 +70,8 @@ public class Search extends BasePage {
 		} else {
 			inputLocation.clear();
 			inputLocation.sendKeys(location);
-			try {
-				Thread.sleep(3000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
-			if (inputConfirmation.isDisplayed()) {
-				try {
-					inputConfirmation.click();
-				} catch (StaleElementReferenceException e) {
-				}
-			}
+			wait.until(ExpectedConditions.visibilityOf(inputConfirmation));
+			inputConfirmation.click();
 		}
 	}
 
