@@ -30,6 +30,7 @@ public class DriverSetup {
 		String os = getProperties().getProperty("os");
 		String browser = getProperties().getProperty("browser");
 
+		// Uses Selenium Grid to initialize browser if execution environment is remote
 		if (getProperties().getProperty("execution_env").equals("remote")) {
 			DesiredCapabilities capabalities = new DesiredCapabilities();
 			if (os.equalsIgnoreCase("windows")) {
@@ -50,6 +51,7 @@ public class DriverSetup {
 			}
 
 			driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabalities);
+			// Initializes browser without Grid on local
 		} else if (p.getProperty("execution_env").equalsIgnoreCase("local")) {
 			if (browser.equals("chrome")) {
 				driver = new ChromeDriver();
@@ -84,6 +86,7 @@ public class DriverSetup {
 		return p;
 	}
 	
+	// Take a screenshot
 	public String captureScreen(String tname) throws IOException {
 
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
