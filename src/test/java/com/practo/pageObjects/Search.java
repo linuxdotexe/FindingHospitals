@@ -149,11 +149,11 @@ public class Search extends BasePage {
 	// Output top five doctor names
 	public void outputDoctorNames() {
 			try {
-				ExcelUtils.write("DoctorDetails", 0, 0, "Doctor Name");
-				ExcelUtils.write("DoctorDetails", 0, 1, "Doctor Specialization");
-				ExcelUtils.write("DoctorDetails", 0, 2, "Doctor Experience");
-				ExcelUtils.write("DoctorDetails", 0, 3, "Doctor Location");
-				ExcelUtils.write("DoctorDetails", 0, 4, "Doctor Fee");
+				ExcelUtils.writeToExcel("DoctorDetails", 0, 0, "Doctor Name");
+				ExcelUtils.writeToExcel("DoctorDetails", 0, 1, "Doctor Specialization");
+				ExcelUtils.writeToExcel("DoctorDetails", 0, 2, "Doctor Experience");
+				ExcelUtils.writeToExcel("DoctorDetails", 0, 3, "Doctor Location");
+				ExcelUtils.writeToExcel("DoctorDetails", 0, 4, "Doctor Fee");
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -172,11 +172,11 @@ public class Search extends BasePage {
 			System.out.println("Doctor Fee: " + doctorFee.get(i));
 			System.out.println("\n");
 			try {
-				ExcelUtils.write("DoctorDetails", i+1, 0, doctorName.get(i));
-				ExcelUtils.write("DoctorDetails", i+1, 1, doctorSpecialization.get(i));
-				ExcelUtils.write("DoctorDetails", i+1, 2, doctorExperience.get(i));
-				ExcelUtils.write("DoctorDetails", i+1, 3, doctorLocation.get(i));
-				ExcelUtils.write("DoctorDetails", i+1, 4, doctorFee.get(i));
+				ExcelUtils.writeToExcel("DoctorDetails", i+1, 0, doctorName.get(i));
+				ExcelUtils.writeToExcel("DoctorDetails", i+1, 1, doctorSpecialization.get(i));
+				ExcelUtils.writeToExcel("DoctorDetails", i+1, 2, doctorExperience.get(i));
+				ExcelUtils.writeToExcel("DoctorDetails", i+1, 3, doctorLocation.get(i));
+				ExcelUtils.writeToExcel("DoctorDetails", i+1, 4, doctorFee.get(i));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

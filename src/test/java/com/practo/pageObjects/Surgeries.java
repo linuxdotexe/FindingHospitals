@@ -93,14 +93,14 @@ public class Surgeries extends BasePage {
 	// Output surgeries listed under popular surgeries
 	public void outputPopularSurgeries() {
 		try {
-			ExcelUtils.write("Surgeries", 0, 0, "Surgery Name");
+			ExcelUtils.writeToExcel("Surgeries", 0, 0, "Surgery Name");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		for (int i = 0; i < popularSurgeries.size(); i++) {
 			System.out.println(popularSurgeries.get(i).getText());
 			try {
-				ExcelUtils.write("Surgeries", i+1 , 0, popularSurgeries.get(i).getText());
+				ExcelUtils.writeToExcel("Surgeries", i+1 , 0, popularSurgeries.get(i).getText());
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

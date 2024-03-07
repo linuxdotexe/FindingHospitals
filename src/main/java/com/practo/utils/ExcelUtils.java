@@ -9,10 +9,10 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-// TODO: write comments
 public class ExcelUtils {
 
-	public static void write(String sheetName, int rownum, int colnum, String data) throws IOException {
+	// Writes data to Excel taking sheet name, row, and column details.
+	public static void writeToExcel(String sheetName, int rownum, int colnum, String data) throws IOException {
 		FileInputStream file = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\test\\resources\\Output.xlsx");
 
